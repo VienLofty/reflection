@@ -26,7 +26,10 @@ async function authFetch(endpoint, body) {
     body: JSON.stringify(body),
   });
   const data = await r.json();
-  if (!r.ok) throw new Error(parseAuthError(data.error?.message || "UNKNOWN"));
+  if (!r.ok) {
+    console.error("Auth error:", { status: r.status, endpoint, error: data });
+    throw new Error(parseAuthError(data.error?.message || "UNKNOWN"));
+  }
   return data;
 }
 
@@ -132,6 +135,7 @@ async function handleSignUp() {
     storeSession(auth);
     onAuthSuccess(auth.localId, auth.displayName);
   } catch (err) {
+    console.error("Sign up error:", err);
     showAuthError("signup-error", err.message);
   } finally {
     btn.textContent = "Create account →";
@@ -156,6 +160,7 @@ async function handleSignIn() {
     storeSession(auth);
     onAuthSuccess(auth.localId, auth.displayName);
   } catch (err) {
+    console.error("Sign in error:", err);
     showAuthError("signin-error", err.message);
   } finally {
     btn.textContent = "Sign in →";
