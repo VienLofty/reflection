@@ -1,0 +1,30 @@
+{
+  "name": "reflection",
+  "version": "1.0.0",
+  "description": "A beautiful multiplayer game for two people to answer relationship questions and compare answers",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "game",
+    "multiplayer",
+    "relationship",
+    "questions",
+    "vanilla-js",
+    "real-time"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/reflection.git"
+  },
+  "homepage": "https://github.com/yourusername/reflection#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>Reflection</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Landing Screen -->
+    <div id="screen-landing" class="screen hidden" style="gap: 32px; justify-content: center">
+      <div style="text-align: center">
+        <div class="logo">Reflection</div>
+        <h2 style="margin-top: 18px">
+          Ten questions.<br /><em style="font-style: italic; color: var(--stone2)">Two people.</em>
+        </h2>
+        <p style="font-size: 15px; color: var(--stone); margin-top: 16px; line-height: 1.8; font-weight: 300">
+          Answer honestly, compare at the end. No scores — just the good stuff.
+        </p>
+      </div>
+      <div class="card" style="display: flex; flex-direction: column; gap: 18px">
+        <div>
+          <label
+            style="
+              font-size: 12px;
+              color: var(--stone2);
+              font-weight: 500;
+              display: block;
+              margin-bottom: 9px;
+              text-transform: uppercase;
+              letter-spacing: 0.1em;
+            "
+            >Your name</label
+          >
+          <input id="name-input" class="input-field" placeholder="First name is fine" maxlength="30" />
+        </div>
+        <button class="btn-primary" onclick="goToRoom()">Let's go →</button>
+      </div>
+      <p style="font-size: 13px; color: var(--stone); text-align: center; line-height: 1.7">
+        Your answers are private until you've both finished.
+      </p>
+    </div>
+
+    <!-- Room Setup Screen -->
+    <div id="screen-room" class="screen hidden" style="gap: 26px; padding-top: 40px">
+      <div>
+        <div class="logo">Reflection</div>
+        <h2 style="margin-top: 16px; font-size: 30px">Set up<br />your room</h2>
+        <p style="font-size: 14px; color: var(--stone); margin-top: 12px; line-height: 1.7; font-weight: 300">
+          One person creates, the other joins. You each answer separately, then see it all together.
+        </p>
+      </div>
+      <div class="card" style="display: flex; flex-direction: column; gap: 22px">
+        <div>
+          <p style="font-size: 14px; color: var(--stone2); margin-bottom: 12px; font-weight: 500">Start a new room</p>
+          <button class="btn-primary" onclick="createRoom()">Create room</button>
+        </div>
+        <div class="or-divider">or join one</div>
+        <div>
+          <p style="font-size: 14px; color: var(--stone2); margin-bottom: 12px; font-weight: 500">Have a code?</p>
+          <input
+            id="join-code"
+            class="input-field"
+            placeholder="6-letter code"
+            maxlength="6"
+            style="
+              margin-bottom: 12px;
+              text-transform: uppercase;
+              letter-spacing: 0.18em;
+              font-size: 20px;
+              text-align: center;
+            "
+            oninput="this.value = this.value.toUpperCase()"
+          />
+          <button class="btn-primary" onclick="joinRoom()">Join room</button>
+        </div>
+      </div>
+      <div id="room-error" class="warn-box hidden"></div>
+    </div>
+
+    <!-- Waiting for Partner Screen -->
+    <div id="screen-waiting-start" class="screen hidden" style="gap: 26px; padding-top: 40px">
+      <div>
+        <div class="logo">Reflection</div>
+        <h2 style="margin-top: 16px; font-size: 30px">Share this<br />with them</h2>
+        <p style="font-size: 14px; color: var(--stone); margin-top: 12px; line-height: 1.7; font-weight: 300">
+          Send the code over — or copy this page link. They open it, tap "Join room", type in the code.
+        </p>
+      </div>
+      <div class="room-display">
+        <div class="room-label">Room code</div>
+        <div id="display-code" class="room-code">——</div>
+        <div style="display: flex; gap: 8px; justify-content: center; margin-top: 12px; flex-wrap: wrap">
+          <button class="btn-ghost" onclick="copyCode(event)">Copy code</button>
+          <button class="btn-ghost" onclick="copyLink(event)">Copy page link</button>
+        </div>
+      </div>
+      <div class="share-hint">
+        <strong>Tip:</strong> Send the code via WhatsApp or iMessage. They open this same page on their phone, tap "Join
+        room" and type it in.
+      </div>
+      <div class="status-badge">
+        <span class="status-dot"></span><span id="wait-status">Waiting for them to join…</span>
+      </div>
+      <div id="start-btn-area" class="hidden" style="margin-top: 4px">
+        <button class="btn-primary" onclick="startQuestions()">Start answering →</button>
+      </div>
+    </div>
+
+    <!-- Question Screen -->
+    <div id="screen-question" class="screen hidden" style="gap: 20px">
+      <div>
+        <div class="progress-bar"><div id="progress-fill" class="progress-fill" style="width: 0%"></div></div>
+        <div style="display: flex; justify-content: space-between; margin-top: 6px">
+          <span
+            style="font-size: 11px; color: var(--stone); text-transform: uppercase; letter-spacing: 0.12em"
+            id="q-num"
+            >Question 1</span
+          >
+          <span style="font-size: 11px; color: var(--stone)"><span id="q-index">1</span> of 10</span>
+        </div>
+      </div>
+      <div>
+        <h2 id="q-title" style="font-size: 26px"></h2>
+        <p
+          id="q-desc"
+          style="font-size: 14px; color: var(--stone); margin-top: 10px; line-height: 1.7; font-weight: 300"
+        ></p>
+      </div>
+      <div id="chips-container" class="chips"></div>
+      <div>
+        <div class="custom-label">Anything to add?</div>
+        <textarea
+          id="custom-textarea"
+          class="custom-input"
+          placeholder="Your own words, if the options don't quite fit…"
+        ></textarea>
+      </div>
+      <div class="nav-row">
+        <button id="btn-back" class="btn-secondary" onclick="prevQuestion()" style="width: 76px">←</button>
+        <button id="btn-next" class="btn-primary" onclick="nextQuestion()">Next →</button>
+      </div>
+    </div>
+
+    <!-- Waiting for Partner Results Screen -->
+    <div
+      id="screen-waiting-partner"
+      class="screen hidden"
+      style="gap: 26px; justify-content: center; text-align: center"
+    >
+      <div class="logo" style="text-align: center">Reflection</div>
+      <div class="pulse-circle"></div>
+      <div>
+        <h2 style="font-size: 28px">All done.</h2>
+        <p style="font-size: 14px; color: var(--stone); margin-top: 12px; line-height: 1.7; font-weight: 300">
+          Waiting for the other person to finish. Results appear automatically — no need to refresh.
+        </p>
+      </div>
+      <div class="status-badge">
+        <span class="status-dot"></span><span id="partner-wait-status">They're still answering…</span>
+      </div>
+    </div>
+
+    <!-- Comparison Results Screen -->
+    <div id="screen-compare" class="hidden" style="background: var(--sand); min-height: 100vh">
+      <div class="compare-header">
+        <div class="logo" style="text-align: center">Reflection</div>
+        <div style="text-align: center; margin-top: 12px">
+          <h2 style="font-size: 26px">Here's how it looks</h2>
+          <p style="font-size: 13px; color: var(--stone); margin-top: 5px">Curious, not critical — that's the vibe.</p>
+        </div>
+        <div class="compare-names">
+          <div class="name-badge name-a" id="comp-name-a">—</div>
+          <div class="name-badge name-b" id="comp-name-b">—</div>
+        </div>
+      </div>
+      <div class="compare-body">
+        <div class="shared-section">
+          <div class="shared-title">Things you both said</div>
+          <div id="shared-tags" class="shared-tags"></div>
+        </div>
+        <div id="compare-questions"></div>
+        <p style="text-align: center; font-size: 13px; color: var(--stone); line-height: 1.8; padding: 8px 0 20px">
+          Different answers aren't problems — they're just the interesting part. 🌿
+        </p>
+      </div>
+    </div>
+
+    <script src="js/game.js"></script>
+  </body>
+</html>
