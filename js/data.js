@@ -316,3 +316,32 @@ async function fbLoadGames() {
     return [];
   }
 }
+
+async function fbSaveHistory(entry) {
+  if (!state.userId) return false;
+  const token = getAuthToken();
+  try {
+    const r = await fetch(`${FIREBASE_URL}/history/${state.userId}/${entry.id}.json?auth=${token}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(entry),
+    });
+    return r.ok;
+  } catch (e) {
+    return false;
+  }
+}
+
+async function fbLoadHistory() {
+  if (!state.userId) return [];
+  const token = getAuthToken();
+  try {
+    const r = await fetch(`${FIREBASE_URL}/history/${state.userId}.json?auth=${token}`);
+    if (!r.ok) return [];
+    const data = await r.json();
+    if (!data) return [];
+    return Object.values(data).sort((a, b) => (b.savedAt || 0) - (a.savedAt || 0));
+  } catch (e) {
+    return [];
+  }
+}

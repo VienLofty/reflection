@@ -10,6 +10,7 @@ const ALL_SCREENS = [
   "screen-question",
   "screen-waiting-partner",
   "screen-compare",
+  "screen-history",
   "screen-game-editor",
   "screen-question-editor",
 ];
@@ -35,6 +36,32 @@ function toggleProfileSidebar() {
     document.getElementById("dark-mode-toggle").checked =
       document.documentElement.getAttribute("data-dark-mode") === "true";
   }
+}
+
+async function showHistory() {
+  show("screen-history");
+  const list = document.getElementById("history-list");
+  list.innerHTML = '<p style="font-size:13px;color:var(--stone)">Loading…</p>';
+  const entries = await fbLoadHistory();
+  if (!entries.length) {
+    list.innerHTML = '<p style="font-size:13px;color:var(--stone)">No saved sessions yet.</p>';
+    return;
+  }
+  list.innerHTML = "";
+  entries.forEach((e) => {
+    const date = new Date(e.savedAt).toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+    const div = document.createElement("div");
+    div.className = "game-card";
+    div.innerHTML = `
+      <div class="game-card-title">${esc(e.gameName)}</div>
+      <div style="font-size:12px;color:var(--stone);margin-top:4px">${esc(e.nameA)} &amp; ${esc(e.nameB)} &middot; ${date}</div>
+    `;
+    list.appendChild(div);
+  });
 }
 
 function toggleDarkMode(event) {

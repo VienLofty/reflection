@@ -23,16 +23,14 @@
       </div>
       <div class="card" style="display: flex; flex-direction: column; gap: 16px">
         <div>
-          <label class="custom-label">Username</label>
+          <label class="custom-label">Email</label>
           <input
-            id="signin-username"
-            type="text"
+            id="signin-email"
+            type="email"
             class="input-field"
-            placeholder="Your username"
-            autocomplete="username"
-            maxlength="30"
+            placeholder="Your email"
+            autocomplete="email"
             style="margin-top: 6px"
-            oninput="this.value = this.value.toLowerCase().replace(/[^a-z0-9_.]/g, '')"
           />
         </div>
         <div>
@@ -73,19 +71,13 @@
           />
         </div>
         <div>
-          <label class="custom-label">Username</label>
+          <label class="custom-label">Email</label>
           <input
-            id="signup-username"
-            type="text"
+            id="signup-email"
+            type="email"
             class="input-field"
-            placeholder="e.g. vien_lofty"
-            maxlength="30"
-            autocomplete="username"
-            style="margin-top: 6px"
-            oninput="this.value = this.value.toLowerCase().replace(/[^a-z0-9_.]/g, '')"
-          />
-          <p style="font-size: 12px; color: var(--stone); margin-top: 6px">Letters, numbers, . and _ only.</p>
-        </div>
+            placeholder="Your email"
+            autocomplete="email"
             style="margin-top: 6px"
           />
         </div>
@@ -164,7 +156,12 @@
         </button>
       </div>
       <div>
-        <h2 style="font-size: 30px">Your games</h2>
+        <div style="display: flex; justify-content: space-between; align-items: baseline">
+          <h2 style="font-size: 30px">Your games</h2>
+          <button class="btn-ghost" style="width: auto; padding: 6px 10px; font-size: 13px" onclick="showHistory()">
+            Past games →
+          </button>
+        </div>
         <p style="font-size: 14px; color: var(--stone); margin-top: 8px; line-height: 1.7; font-weight: 300">
           Pick a game to play, or create your own.
         </p>
@@ -225,7 +222,7 @@
                 margin-bottom: 6px;
               "
             >
-              Username
+              Email
             </div>
             <div id="profile-email" style="font-size: 14px; color: var(--stone); word-break: break-all">—</div>
           </div>
@@ -509,9 +506,51 @@
           <div id="shared-tags" class="shared-tags"></div>
         </div>
         <div id="compare-questions"></div>
-        <p style="text-align: center; font-size: 13px; color: var(--stone); line-height: 1.8; padding: 8px 0 20px">
-          Different answers aren't problems — they're just the interesting part. 🌿
-        </p>
+        <div
+          style="
+            text-align: center;
+            padding: 24px 0 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+          "
+        >
+          <p style="font-size: 13px; color: var(--stone)">Want to save this session?</p>
+          <div style="display: flex; gap: 10px; width: 100%">
+            <button class="btn-primary" onclick="saveToHistory()" style="flex: 1">Save to history</button>
+            <button class="btn-ghost" onclick="showLibrary()" style="flex: 1">Skip</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- History Screen -->
+    <div id="screen-history" class="screen hidden" style="gap: 24px; padding-top: 40px">
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <div class="logo">Reflection</div>
+        <button
+          class="btn-ghost"
+          style="width: auto; padding: 8px 10px; font-size: 16px"
+          onclick="toggleProfileSidebar()"
+          title="Profile & settings"
+        >
+          👤
+        </button>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <div>
+          <h2 style="font-size: 30px">Past games</h2>
+          <p style="font-size: 14px; color: var(--stone); margin-top: 8px; line-height: 1.7; font-weight: 300">
+            Sessions you've saved.
+          </p>
+        </div>
+        <button class="btn-ghost" style="width: auto; padding: 8px 14px; font-size: 13px" onclick="showLibrary()">
+          ← Back
+        </button>
+      </div>
+      <div id="history-list" style="display: flex; flex-direction: column; gap: 12px">
+        <p style="font-size: 13px; color: var(--stone)">Loading…</p>
       </div>
     </div>
 

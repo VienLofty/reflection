@@ -341,7 +341,28 @@ function showComparison(room) {
     qc.appendChild(sec);
   });
 
+  state.lastRoom = room;
   show("screen-compare");
+}
+
+async function saveToHistory() {
+  const room = state.lastRoom;
+  if (!room) {
+    showLibrary();
+    return;
+  }
+  const entry = {
+    id: Date.now().toString(),
+    savedAt: Date.now(),
+    gameName: room.game?.title || "Untitled",
+    nameA: room.nameA || "",
+    nameB: room.nameB || "",
+    questions: room.game?.questions || [],
+    answersA: room.answersA || [],
+    answersB: room.answersB || [],
+  };
+  await fbSaveHistory(entry);
+  showLibrary();
 }
 
 // ─── Clipboard ────────────────────────────────────────────────────────────────
