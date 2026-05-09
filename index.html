@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- ─── Landing Screen ──────────────────────────────────────────────────── -->
-        <!-- ─── Sign In Screen ──────────────────────────────────────────────────── -->
+    <!-- ─── Sign In Screen ──────────────────────────────────────────────────── -->
     <div id="screen-signin" class="screen hidden" style="gap: 32px; justify-content: center">
       <div style="text-align: center">
         <div class="logo">Reflection</div>
@@ -24,11 +24,25 @@
       <div class="card" style="display: flex; flex-direction: column; gap: 16px">
         <div>
           <label class="custom-label">Email</label>
-          <input id="signin-email" type="email" class="input-field" placeholder="Your email" autocomplete="email" style="margin-top: 6px" />
+          <input
+            id="signin-email"
+            type="email"
+            class="input-field"
+            placeholder="Your email"
+            autocomplete="email"
+            style="margin-top: 6px"
+          />
         </div>
         <div>
           <label class="custom-label">Password</label>
-          <input id="signin-password" type="password" class="input-field" placeholder="Your password" autocomplete="current-password" style="margin-top: 6px" />
+          <input
+            id="signin-password"
+            type="password"
+            class="input-field"
+            placeholder="Your password"
+            autocomplete="current-password"
+            style="margin-top: 6px"
+          />
         </div>
         <button id="signin-btn" class="btn-primary" onclick="handleSignIn()">Sign in →</button>
         <button class="btn-secondary" onclick="show('screen-signup')" style="width: 100%">Create account</button>
@@ -48,19 +62,46 @@
       <div class="card" style="display: flex; flex-direction: column; gap: 16px">
         <div>
           <label class="custom-label">Your name</label>
-          <input id="signup-name" class="input-field" placeholder="First name is fine" maxlength="30" style="margin-top: 6px" />
+          <input
+            id="signup-name"
+            class="input-field"
+            placeholder="First name is fine"
+            maxlength="30"
+            style="margin-top: 6px"
+          />
         </div>
         <div>
           <label class="custom-label">Email</label>
-          <input id="signup-email" type="email" class="input-field" placeholder="Your email" autocomplete="email" style="margin-top: 6px" />
+          <input
+            id="signup-email"
+            type="email"
+            class="input-field"
+            placeholder="Your email"
+            autocomplete="email"
+            style="margin-top: 6px"
+          />
         </div>
         <div>
           <label class="custom-label">Password</label>
-          <input id="signup-password" type="password" class="input-field" placeholder="At least 6 characters" autocomplete="new-password" style="margin-top: 6px" />
+          <input
+            id="signup-password"
+            type="password"
+            class="input-field"
+            placeholder="At least 6 characters"
+            autocomplete="new-password"
+            style="margin-top: 6px"
+          />
         </div>
         <div>
           <label class="custom-label">Confirm password</label>
-          <input id="signup-confirm" type="password" class="input-field" placeholder="Repeat password" autocomplete="new-password" style="margin-top: 6px" />
+          <input
+            id="signup-confirm"
+            type="password"
+            class="input-field"
+            placeholder="Repeat password"
+            autocomplete="new-password"
+            style="margin-top: 6px"
+          />
         </div>
         <button id="signup-btn" class="btn-primary" onclick="handleSignUp()">Create account →</button>
         <button class="btn-secondary" onclick="show('screen-signin')" style="width: 100%">Back to sign in</button>
@@ -105,11 +146,7 @@
     <div id="screen-library" class="screen hidden" style="gap: 24px; padding-top: 40px">
       <div style="display: flex; justify-content: space-between; align-items: center">
         <div class="logo">Reflection</div>
-        <button
-          class="btn-ghost"
-          style="width: auto; padding: 7px 12px; font-size: 12px"
-          onclick="handleSignOut()"
-        >
+        <button class="btn-ghost" style="width: auto; padding: 7px 12px; font-size: 12px" onclick="handleSignOut()">
           Sign out
         </button>
       </div>

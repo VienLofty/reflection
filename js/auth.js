@@ -88,9 +88,7 @@ function storeSession(auth) {
 }
 
 function clearSession() {
-  ["ref_id_token", "ref_refresh_token", "ref_user_id", "ref_display_name"].forEach((k) =>
-    localStorage.removeItem(k)
-  );
+  ["ref_id_token", "ref_refresh_token", "ref_user_id", "ref_display_name"].forEach((k) => localStorage.removeItem(k));
 }
 
 function getStoredSession() {

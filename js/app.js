@@ -41,4 +41,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 load();
 restoreSession();
-show("screen-landing");
