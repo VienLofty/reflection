@@ -505,3 +505,83 @@ h2 {
   color: var(--ink);
   line-height: 1.15;
 }
+
+/* ─── Editor UI ─────────────────────────────────────────────────────────── */
+
+.question-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--white);
+  border: 1.5px solid var(--sand3);
+  border-radius: var(--r);
+  transition: border-color 0.15s;
+}
+
+.question-list-item:hover {
+  border-color: var(--stone);
+}
+
+.icon-btn {
+  padding: 6px 10px;
+  background: var(--sand);
+  border: 1.5px solid var(--sand3);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--stone2);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.icon-btn:hover:not(:disabled) {
+  border-color: var(--stone2);
+  color: var(--ink2);
+  background: var(--sand2);
+}
+
+.icon-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.icon-btn-danger:hover:not(:disabled) {
+  border-color: #a0522d;
+  color: #a0522d;
+  background: rgba(160, 82, 45, 0.07);
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.type-btn {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid var(--sand3);
+  border-radius: var(--r);
+  background: var(--white);
+  color: var(--stone2);
+  cursor: pointer;
+  font-size: 12px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+.type-btn:hover:not(.selected) {
+  border-color: var(--stone2);
+  color: var(--ink2);
+}
+
+.type-btn.selected {
+  background: var(--ink2);
+  color: #fff;
+  border-color: var(--ink2);
+}
