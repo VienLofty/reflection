@@ -39,10 +39,9 @@ async function submitJoinCode() {
   await writeRoom(code, room);
   save();
 
-  // Show waiting screen
+  // Show waiting screen — Player B can start whenever both are ready
   document.getElementById("display-code").textContent = code;
-  document.getElementById("wait-status").textContent = "You're in! Waiting for them…";
+  document.getElementById("wait-status").textContent = "You're in! Ready when you are.";
   document.getElementById("start-btn-area").classList.remove("hidden");
   show("screen-waiting-start");
-  pollForPartner();
 }

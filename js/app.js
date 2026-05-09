@@ -1,7 +1,8 @@
 // ─── Screen Management ────────────────────────────────────────────────────────
 
 const ALL_SCREENS = [
-  "screen-landing",
+  "screen-signin",
+  "screen-signup",
   "screen-library",
   "screen-join-code",
   "screen-room",
@@ -22,56 +23,22 @@ function show(id) {
   if (el) el.classList.remove("hidden");
 }
 
-// ─── Landing Screen ───────────────────────────────────────────────────────────
+// ─── Allow Enter key on auth + code input fields ────────────────────────────────────────────
 
-function goToLibrary() {
-  const n = document.getElementById("name-input").value.trim();
-  if (!n) {
-    document.getElementById("name-input").focus();
-    return;
-  }
-  state.name = n;
-  save();
-  showLibrary();
-}
-
-function goToJoinCode() {
-  const n = document.getElementById("name-input").value.trim();
-  if (!n) {
-    document.getElementById("name-input").focus();
-    return;
-  }
-  state.name = n;
-  save();
-  show("screen-join-code");
-  document.getElementById("join-code-input").focus();
-}
-
-function goToLanding() {
-  show("screen-landing");
-  document.getElementById("join-code-input").value = "";
-  const err = document.getElementById("join-code-error");
-  if (err) err.classList.add("hidden");
-}
-
-// Allow Enter key on name input
 document.addEventListener("DOMContentLoaded", () => {
-  const nameInput = document.getElementById("name-input");
-  if (nameInput) {
-    nameInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") goToLibrary();
-    });
-  }
-  const codeInput = document.getElementById("join-code-input");
-  if (codeInput) {
-    codeInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") submitJoinCode();
-    });
-  }
+  document.getElementById("signin-password")?.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") handleSignIn();
+  });
+  document.getElementById("signup-confirm")?.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") handleSignUp();
+  });
+  document.getElementById("join-code-input")?.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") submitJoinCode();
+  });
 });
 
 // ─── Init ─────────────────────────────────────────────────────────────────────
 
 load();
-document.getElementById("name-input").value = state.name || "";
+restoreSession();
 show("screen-landing");

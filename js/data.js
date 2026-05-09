@@ -218,8 +218,13 @@ const TEMPLATE_GAME = {
 
 const SK = "reflection_v5";
 
+function getAuthToken() {
+  return localStorage.getItem("ref_id_token") || "";
+}
+
 let state = {
   deviceId: getDeviceId(),
+  userId: "",
   name: "",
   selectedGame: null,
   roomCode: "",
@@ -271,8 +276,10 @@ async function readRoom(code) {
 }
 
 async function fbSaveGame(game) {
+  if (!state.userId) return false;
+  const token = getAuthToken();
   try {
-    const r = await fetch(`${FIREBASE_URL}/games/${state.deviceId}/${game.id}.json`, {
+    const r = await fetch(`${FIREBASE_URL}/games/${state.userId}/${game.id}.json?auth=${token}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(game),
@@ -284,8 +291,10 @@ async function fbSaveGame(game) {
 }
 
 async function fbDeleteGame(gameId) {
+  if (!state.userId) return false;
+  const token = getAuthToken();
   try {
-    const r = await fetch(`${FIREBASE_URL}/games/${state.deviceId}/${gameId}.json`, {
+    const r = await fetch(`${FIREBASE_URL}/games/${state.userId}/${gameId}.json?auth=${token}`, {
       method: "DELETE",
     });
     return r.ok;
@@ -295,8 +304,10 @@ async function fbDeleteGame(gameId) {
 }
 
 async function fbLoadGames() {
+  if (!state.userId) return [];
+  const token = getAuthToken();
   try {
-    const r = await fetch(`${FIREBASE_URL}/games/${state.deviceId}.json`);
+    const r = await fetch(`${FIREBASE_URL}/games/${state.userId}.json?auth=${token}`);
     if (!r.ok) return [];
     const data = await r.json();
     if (!data) return [];

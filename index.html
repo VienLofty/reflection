@@ -12,38 +12,60 @@
   </head>
   <body>
     <!-- ─── Landing Screen ──────────────────────────────────────────────────── -->
-    <div id="screen-landing" class="screen hidden" style="gap: 32px; justify-content: center">
+        <!-- ─── Sign In Screen ──────────────────────────────────────────────────── -->
+    <div id="screen-signin" class="screen hidden" style="gap: 32px; justify-content: center">
       <div style="text-align: center">
         <div class="logo">Reflection</div>
-        <h2 style="margin-top: 18px">
-          It's just<br /><em style="font-style: italic; color: var(--stone2)">you two.</em>
-        </h2>
+        <h2 style="margin-top: 18px">Welcome back.</h2>
         <p style="font-size: 15px; color: var(--stone); margin-top: 16px; line-height: 1.8; font-weight: 300">
-          Pick a game, answer from the heart, <br />then see what you both think.
+          Sign in to see your games.
         </p>
       </div>
-      <div class="card" style="display: flex; flex-direction: column; gap: 18px">
+      <div class="card" style="display: flex; flex-direction: column; gap: 16px">
         <div>
-          <label
-            style="
-              font-size: 12px;
-              color: var(--stone2);
-              font-weight: 500;
-              display: block;
-              margin-bottom: 9px;
-              text-transform: uppercase;
-              letter-spacing: 0.1em;
-            "
-            >Your name</label
-          >
-          <input id="name-input" class="input-field" placeholder="First name is fine" maxlength="30" />
+          <label class="custom-label">Email</label>
+          <input id="signin-email" type="email" class="input-field" placeholder="Your email" autocomplete="email" style="margin-top: 6px" />
         </div>
-        <button class="btn-primary" onclick="goToLibrary()">Browse games →</button>
-        <button class="btn-secondary" onclick="goToJoinCode()" style="width: 100%">Join with code</button>
+        <div>
+          <label class="custom-label">Password</label>
+          <input id="signin-password" type="password" class="input-field" placeholder="Your password" autocomplete="current-password" style="margin-top: 6px" />
+        </div>
+        <button id="signin-btn" class="btn-primary" onclick="handleSignIn()">Sign in →</button>
+        <button class="btn-secondary" onclick="show('screen-signup')" style="width: 100%">Create account</button>
       </div>
-      <p style="font-size: 13px; color: var(--stone); text-align: center; line-height: 1.7">
-        Your answers stay private until you've both finished.
-      </p>
+      <div id="signin-error" class="warn-box hidden"></div>
+    </div>
+
+    <!-- ─── Sign Up Screen ──────────────────────────────────────────────────── -->
+    <div id="screen-signup" class="screen hidden" style="gap: 28px; justify-content: center">
+      <div style="text-align: center">
+        <div class="logo">Reflection</div>
+        <h2 style="margin-top: 18px">Create account</h2>
+        <p style="font-size: 15px; color: var(--stone); margin-top: 12px; line-height: 1.8; font-weight: 300">
+          Your name is shown to your game partner.
+        </p>
+      </div>
+      <div class="card" style="display: flex; flex-direction: column; gap: 16px">
+        <div>
+          <label class="custom-label">Your name</label>
+          <input id="signup-name" class="input-field" placeholder="First name is fine" maxlength="30" style="margin-top: 6px" />
+        </div>
+        <div>
+          <label class="custom-label">Email</label>
+          <input id="signup-email" type="email" class="input-field" placeholder="Your email" autocomplete="email" style="margin-top: 6px" />
+        </div>
+        <div>
+          <label class="custom-label">Password</label>
+          <input id="signup-password" type="password" class="input-field" placeholder="At least 6 characters" autocomplete="new-password" style="margin-top: 6px" />
+        </div>
+        <div>
+          <label class="custom-label">Confirm password</label>
+          <input id="signup-confirm" type="password" class="input-field" placeholder="Repeat password" autocomplete="new-password" style="margin-top: 6px" />
+        </div>
+        <button id="signup-btn" class="btn-primary" onclick="handleSignUp()">Create account →</button>
+        <button class="btn-secondary" onclick="show('screen-signin')" style="width: 100%">Back to sign in</button>
+      </div>
+      <div id="signup-error" class="warn-box hidden"></div>
     </div>
 
     <!-- ─── Join with Code Screen ──────────────────────────────────────────────────── -->
@@ -74,16 +96,25 @@
           />
         </div>
         <button class="btn-primary" onclick="submitJoinCode()">Join →</button>
-        <button class="btn-secondary" onclick="goToLanding()" style="width: 100%">Go back</button>
+        <button class="btn-secondary" onclick="showLibrary()" style="width: 100%">Go back</button>
       </div>
       <div id="join-code-error" class="warn-box hidden"></div>
     </div>
 
     <!-- ─── Library Screen ──────────────────────────────────────────────────── -->
     <div id="screen-library" class="screen hidden" style="gap: 24px; padding-top: 40px">
-      <div>
+      <div style="display: flex; justify-content: space-between; align-items: center">
         <div class="logo">Reflection</div>
-        <h2 style="margin-top: 16px; font-size: 30px">Your games</h2>
+        <button
+          class="btn-ghost"
+          style="width: auto; padding: 7px 12px; font-size: 12px"
+          onclick="handleSignOut()"
+        >
+          Sign out
+        </button>
+      </div>
+      <div>
+        <h2 style="font-size: 30px">Your games</h2>
         <p style="font-size: 14px; color: var(--stone); margin-top: 8px; line-height: 1.7; font-weight: 300">
           Pick a game to play, or create your own.
         </p>
@@ -92,6 +123,7 @@
         <p style="font-size: 13px; color: var(--stone)">Loading…</p>
       </div>
       <button class="btn-primary" onclick="createNewGame()">+ Create new game</button>
+      <button class="btn-secondary" onclick="show('screen-join-code')" style="width: 100%">Join with code</button>
     </div>
 
     <!-- ─── Game Editor Screen ──────────────────────────────────────────────── -->
@@ -355,9 +387,10 @@
     </div>
 
     <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
     <script src="js/editor.js"></script>
     <script src="js/play.js"></script>
-    <script src="js/app.js"></script>
     <script src="js/join.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
