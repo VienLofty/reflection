@@ -19,6 +19,18 @@
   --r2: 22px;
 }
 
+html[data-dark-mode="true"] {
+  --sand: #1a1a1a;
+  --sand2: #2a2a2a;
+  --sand3: #404040;
+  --stone: #b0a090;
+  --stone2: #d0c0a0;
+  --ink: #f5f0e8;
+  --ink2: #ede6d6;
+  --blush: #6b5545;
+  --sage: #4a5648;
+}
+
 html,
 body {
   height: 100%;
@@ -584,4 +596,56 @@ h2 {
   background: var(--ink2);
   color: #fff;
   border-color: var(--ink2);
+}
+
+/* ─── Profile Sidebar ──────────────────────────────────────────────────────── */
+
+.profile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile-sidebar.hidden {
+  display: none;
+}
+
+.profile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.profile-panel {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 100%;
+  background: var(--sand);
+  border-left: 2px solid var(--sand3);
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

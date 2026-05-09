@@ -83,15 +83,16 @@ async function refreshIdToken() {
 
 // ─── Session Storage ──────────────────────────────────────────────────────────
 
-function storeSession(auth) {
+function storeSession(auth, email) {
   localStorage.setItem("ref_id_token", auth.idToken);
   localStorage.setItem("ref_refresh_token", auth.refreshToken);
   localStorage.setItem("ref_user_id", auth.localId);
   localStorage.setItem("ref_display_name", auth.displayName);
+  if (email) localStorage.setItem("ref_user_email", email);
 }
 
 function clearSession() {
-  ["ref_id_token", "ref_refresh_token", "ref_user_id", "ref_display_name"].forEach((k) => localStorage.removeItem(k));
+  ["ref_id_token", "ref_refresh_token", "ref_user_id", "ref_display_name", "ref_user_email"].forEach((k) => localStorage.removeItem(k));
 }
 
 function getStoredSession() {
@@ -132,7 +133,7 @@ async function handleSignUp() {
 
   try {
     const auth = await fbSignUp(name, email, password);
-    storeSession(auth);
+    storeSession(auth, email);
     onAuthSuccess(auth.localId, auth.displayName);
   } catch (err) {
     console.error("Sign up error:", err);
@@ -157,7 +158,7 @@ async function handleSignIn() {
 
   try {
     const auth = await fbSignIn(email, password);
-    storeSession(auth);
+    storeSession(auth, email);
     onAuthSuccess(auth.localId, auth.displayName);
   } catch (err) {
     console.error("Sign in error:", err);
@@ -169,6 +170,11 @@ async function handleSignIn() {
 }
 
 function handleSignOut() {
+  // Close profile sidebar if open
+  const sidebar = document.getElementById("screen-profile");
+  if (sidebar && !sidebar.classList.contains("hidden")) {
+    sidebar.classList.add("hidden");
+  }
   clearSession();
   state.userId = "";
   state.name = "";
