@@ -32,7 +32,8 @@ function toggleProfileSidebar() {
   if (!sidebar.classList.contains("hidden")) {
     document.getElementById("profile-name").textContent = state.name || "User";
     document.getElementById("profile-email").textContent = localStorage.getItem("ref_user_email") || "";
-    document.getElementById("dark-mode-toggle").checked = document.documentElement.getAttribute("data-dark-mode") === "true";
+    document.getElementById("dark-mode-toggle").checked =
+      document.documentElement.getAttribute("data-dark-mode") === "true";
   }
 }
 

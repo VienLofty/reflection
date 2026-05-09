@@ -92,7 +92,9 @@ function storeSession(auth, email) {
 }
 
 function clearSession() {
-  ["ref_id_token", "ref_refresh_token", "ref_user_id", "ref_display_name", "ref_user_email"].forEach((k) => localStorage.removeItem(k));
+  ["ref_id_token", "ref_refresh_token", "ref_user_id", "ref_display_name", "ref_user_email"].forEach((k) =>
+    localStorage.removeItem(k),
+  );
 }
 
 function getStoredSession() {
@@ -114,30 +116,39 @@ function showAuthError(elId, msg) {
   el.classList.remove("hidden");
 }
 
+// Convert username to internal email (Firebase requires email format)
+function usernameToEmail(username) {
+  return `${username.toLowerCase().trim()}@reflection.app`;
+}
+
 async function handleSignUp() {
   const name = document.getElementById("signup-name").value.trim();
-  const email = document.getElementById("signup-email").value.trim().toLowerCase();
+  const username = document.getElementById("signup-username").value.trim().toLowerCase();
   const password = document.getElementById("signup-password").value;
   const confirm = document.getElementById("signup-confirm").value;
 
   document.getElementById("signup-error").classList.add("hidden");
 
-  if (!name) return showAuthError("signup-error", "Please enter your display name.");
-  if (!email) return showAuthError("signup-error", "Please enter your email.");
+  if (!name) return showAuthError("signup-error", "Please enter your name.");
+  if (!username) return showAuthError("signup-error", "Please choose a username.");
+  if (!/^[a-z0-9_.]+$/.test(username))
+    return showAuthError("signup-error", "Username can only contain letters, numbers, . and _");
   if (password.length < 6) return showAuthError("signup-error", "Password must be at least 6 characters.");
   if (password !== confirm) return showAuthError("signup-error", "Passwords don't match.");
 
+  const email = usernameToEmail(username);
   const btn = document.getElementById("signup-btn");
   btn.textContent = "Creating account…";
   btn.disabled = true;
 
   try {
     const auth = await fbSignUp(name, email, password);
-    storeSession(auth, email);
+    storeSession(auth, username);
     onAuthSuccess(auth.localId, auth.displayName);
   } catch (err) {
+    const msg = err.message === "That email is already registered." ? "That username is already taken." : err.message;
     console.error("Sign up error:", err);
-    showAuthError("signup-error", err.message);
+    showAuthError("signup-error", msg);
   } finally {
     btn.textContent = "Create account →";
     btn.disabled = false;
@@ -145,24 +156,29 @@ async function handleSignUp() {
 }
 
 async function handleSignIn() {
-  const email = document.getElementById("signin-email").value.trim().toLowerCase();
+  const username = document.getElementById("signin-username").value.trim().toLowerCase();
   const password = document.getElementById("signin-password").value;
 
   document.getElementById("signin-error").classList.add("hidden");
 
-  if (!email || !password) return showAuthError("signin-error", "Please fill in all fields.");
+  if (!username || !password) return showAuthError("signin-error", "Please fill in all fields.");
 
+  const email = usernameToEmail(username);
   const btn = document.getElementById("signin-btn");
   btn.textContent = "Signing in…";
   btn.disabled = true;
 
   try {
     const auth = await fbSignIn(email, password);
-    storeSession(auth, email);
+    storeSession(auth, username);
     onAuthSuccess(auth.localId, auth.displayName);
   } catch (err) {
+    const msg =
+      err.message.includes("email") || err.message.includes("password")
+        ? "Incorrect username or password."
+        : err.message;
     console.error("Sign in error:", err);
-    showAuthError("signin-error", err.message);
+    showAuthError("signin-error", msg);
   } finally {
     btn.textContent = "Sign in →";
     btn.disabled = false;
@@ -179,7 +195,7 @@ function handleSignOut() {
   state.userId = "";
   state.name = "";
   save();
-  document.getElementById("signin-email").value = "";
+  document.getElementById("signin-username").value = "";
   document.getElementById("signin-password").value = "";
   document.getElementById("signin-error").classList.add("hidden");
   show("screen-signin");

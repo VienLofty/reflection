@@ -23,14 +23,16 @@
       </div>
       <div class="card" style="display: flex; flex-direction: column; gap: 16px">
         <div>
-          <label class="custom-label">Email</label>
+          <label class="custom-label">Username</label>
           <input
-            id="signin-email"
-            type="email"
+            id="signin-username"
+            type="text"
             class="input-field"
-            placeholder="Your email"
-            autocomplete="email"
+            placeholder="Your username"
+            autocomplete="username"
+            maxlength="30"
             style="margin-top: 6px"
+            oninput="this.value = this.value.toLowerCase().replace(/[^a-z0-9_.]/g, '')"
           />
         </div>
         <div>
@@ -71,13 +73,19 @@
           />
         </div>
         <div>
-          <label class="custom-label">Email</label>
+          <label class="custom-label">Username</label>
           <input
-            id="signup-email"
-            type="email"
+            id="signup-username"
+            type="text"
             class="input-field"
-            placeholder="Your email"
-            autocomplete="email"
+            placeholder="e.g. vien_lofty"
+            maxlength="30"
+            autocomplete="username"
+            style="margin-top: 6px"
+            oninput="this.value = this.value.toLowerCase().replace(/[^a-z0-9_.]/g, '')"
+          />
+          <p style="font-size: 12px; color: var(--stone); margin-top: 6px">Letters, numbers, . and _ only.</p>
+        </div>
             style="margin-top: 6px"
           />
         </div>
@@ -146,7 +154,12 @@
     <div id="screen-library" class="screen hidden" style="gap: 24px; padding-top: 40px">
       <div style="display: flex; justify-content: space-between; align-items: center">
         <div class="logo">Reflection</div>
-        <button class="btn-ghost" style="width: auto; padding: 8px 10px; font-size: 16px; cursor: pointer" onclick="toggleProfileSidebar()" title="Profile & settings">
+        <button
+          class="btn-ghost"
+          style="width: auto; padding: 8px 10px; font-size: 16px; cursor: pointer"
+          onclick="toggleProfileSidebar()"
+          title="Profile & settings"
+        >
           👤
         </button>
       </div>
@@ -157,10 +170,19 @@
         </p>
       </div>
       <div id="library-list" style="display: flex; flex-direction: column; gap: 12px">
-        <p style="font-size: 13px; color: var(--stone);">Loading…</p>
+        <p style="font-size: 13px; color: var(--stone)">Loading…</p>
       </div>
       <button class="btn-primary" onclick="createNewGame()">+ Create new game</button>
-      <div style="position: sticky; bottom: 0; z-index: 10; padding-top: 12px; background: var(--sand); border-top: 1px solid var(--sand2);">
+      <div
+        style="
+          position: sticky;
+          bottom: 0;
+          z-index: 10;
+          padding-top: 12px;
+          background: var(--sand);
+          border-top: 1px solid var(--sand2);
+        "
+      >
         <button class="btn-secondary" onclick="show('screen-join-code')" style="width: 100%">Join with code</button>
       </div>
     </div>
@@ -170,22 +192,60 @@
       <div class="profile-panel">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px">
           <div style="font-size: 18px; font-weight: 500; color: var(--ink)">Profile</div>
-          <button class="btn-ghost" style="width: auto; padding: 4px 8px; font-size: 14px" onclick="toggleProfileSidebar()">
+          <button
+            class="btn-ghost"
+            style="width: auto; padding: 4px 8px; font-size: 14px"
+            onclick="toggleProfileSidebar()"
+          >
             ✕
           </button>
         </div>
         <div style="display: flex; flex-direction: column; gap: 16px">
           <div>
-            <div style="font-size: 11px; color: var(--stone2); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px">Name</div>
+            <div
+              style="
+                font-size: 11px;
+                color: var(--stone2);
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                margin-bottom: 6px;
+              "
+            >
+              Name
+            </div>
             <div id="profile-name" style="font-size: 16px; color: var(--ink); font-weight: 500">—</div>
           </div>
           <div>
-            <div style="font-size: 11px; color: var(--stone2); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px">Email</div>
+            <div
+              style="
+                font-size: 11px;
+                color: var(--stone2);
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                margin-bottom: 6px;
+              "
+            >
+              Username
+            </div>
             <div id="profile-email" style="font-size: 14px; color: var(--stone); word-break: break-all">—</div>
           </div>
           <div style="border-top: 1px solid var(--sand2); padding-top: 16px">
-            <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; color: var(--stone)">
-              <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode(event)" style="cursor: pointer; width: 16px; height: 16px" />
+            <label
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                font-size: 14px;
+                color: var(--stone);
+              "
+            >
+              <input
+                type="checkbox"
+                id="dark-mode-toggle"
+                onchange="toggleDarkMode(event)"
+                style="cursor: pointer; width: 16px; height: 16px"
+              />
               Dark mode
             </label>
           </div>

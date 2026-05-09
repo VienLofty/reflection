@@ -626,6 +626,7 @@ h2 {
 
 .profile-panel {
   position: relative;
+  z-index: 1001;
   width: 100%;
   max-width: 320px;
   height: 100%;
