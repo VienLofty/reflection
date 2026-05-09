@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <title>Reflection</title>
+    <title>Connection</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
@@ -15,7 +15,7 @@
     <!-- ─── Sign In Screen ──────────────────────────────────────────────────── -->
     <div id="screen-signin" class="screen hidden" style="gap: 32px; justify-content: center">
       <div style="text-align: center">
-        <div class="logo">Reflection</div>
+        <div class="logo">Connection</div>
         <h2 style="margin-top: 18px">Welcome back.</h2>
         <p style="font-size: 15px; color: var(--stone); margin-top: 16px; line-height: 1.8; font-weight: 300">
           Sign in to see your games.
@@ -53,7 +53,7 @@
     <!-- ─── Sign Up Screen ──────────────────────────────────────────────────── -->
     <div id="screen-signup" class="screen hidden" style="gap: 28px; justify-content: center">
       <div style="text-align: center">
-        <div class="logo">Reflection</div>
+        <div class="logo">Connection</div>
         <h2 style="margin-top: 18px">Create account</h2>
         <p style="font-size: 15px; color: var(--stone); margin-top: 12px; line-height: 1.8; font-weight: 300">
           Your name is shown to your game partner.
@@ -110,9 +110,9 @@
     </div>
 
     <!-- ─── Join with Code Screen ──────────────────────────────────────────────────── -->
-    <div id="screen-join-code" class="screen hidden" style="gap: 26px; padding-top: 40px; justify-content: center">
+    <div id="screen-join-code" class="screen hidden" style="gap: 26px; padding-top: 24px; justify-content: center">
       <div style="text-align: center">
-        <div class="logo">Reflection</div>
+        <div class="logo">Connection</div>
         <h2 style="margin-top: 18px; font-size: 30px">Join a game</h2>
         <p style="font-size: 14px; color: var(--stone); margin-top: 10px; line-height: 1.7; font-weight: 300">
           Enter the code they shared with you. The game will load automatically.
@@ -143,9 +143,9 @@
     </div>
 
     <!-- ─── Library Screen ──────────────────────────────────────────────────── -->
-    <div id="screen-library" class="screen hidden" style="gap: 24px; padding-top: 40px">
+    <div id="screen-library" class="screen hidden" style="gap: 24px; padding-top: 24px">
       <div style="display: flex; justify-content: space-between; align-items: center">
-        <div class="logo">Reflection</div>
+        <div class="logo">Connection</div>
         <button
           class="btn-ghost"
           style="width: auto; padding: 8px 10px; font-size: 16px; cursor: pointer"
@@ -351,15 +351,15 @@
     </div>
 
     <!-- ─── Room Setup Screen ──────────────────────────────────────────────── -->
-    <div id="screen-room" class="screen hidden" style="gap: 26px; padding-top: 40px">
+    <div id="screen-room" class="screen hidden" style="gap: 26px; padding-top: 24px">
       <div>
         <div style="margin-bottom: 16px">
           <button class="btn-ghost" style="width: auto; padding: 8px 12px; font-size: 12px" onclick="showLibrary()">
             ← Games
           </button>
         </div>
-        <div class="logo">Reflection</div>
-        <h2 style="margin-top: 12px; font-size: 30px">Set up<br />your room</h2>
+        <div class="logo">Connection</div>
+        <h2 style="margin-top: 12px; font-size: 30px">Set up your room</h2>
         <div
           style="
             margin-top: 10px;
@@ -403,9 +403,9 @@
     </div>
 
     <!-- Waiting for Partner Screen -->
-    <div id="screen-waiting-start" class="screen hidden" style="gap: 26px; padding-top: 40px">
+    <div id="screen-waiting-start" class="screen hidden" style="gap: 26px; padding-top: 24px">
       <div>
-        <div class="logo">Reflection</div>
+        <div class="logo">Connection</div>
         <h2 style="margin-top: 16px; font-size: 30px">Share this<br />with them</h2>
         <p style="font-size: 14px; color: var(--stone); margin-top: 12px; line-height: 1.7; font-weight: 300">
           Send the code over — or copy this page link. They open it, tap "Join room", type in the code.
@@ -466,6 +466,7 @@
         <button id="btn-back" class="btn-secondary" onclick="prevQuestion()" style="width: 76px">←</button>
         <button id="btn-next" class="btn-primary" onclick="nextQuestion()">Next →</button>
       </div>
+      <button class="btn-ghost" onclick="cancelGame()" style="width: 100%; margin-top: 12px">Exit game</button>
     </div>
 
     <!-- Waiting for Partner Results Screen -->
@@ -474,7 +475,7 @@
       class="screen hidden"
       style="gap: 26px; justify-content: center; text-align: center"
     >
-      <div class="logo" style="text-align: center">Reflection</div>
+      <div class="logo" style="text-align: center">Connection</div>
       <div class="pulse-circle"></div>
       <div>
         <h2 style="font-size: 28px">All done.</h2>
@@ -490,7 +491,7 @@
     <!-- Comparison Results Screen -->
     <div id="screen-compare" class="hidden" style="background: var(--sand); min-height: 100vh">
       <div class="compare-header">
-        <div class="logo" style="text-align: center">Reflection</div>
+        <div class="logo" style="text-align: center">Connection</div>
         <div style="text-align: center; margin-top: 12px">
           <h2 style="font-size: 26px">Here's how it looks</h2>
           <p style="font-size: 13px; color: var(--stone); margin-top: 5px">Curious, not critical — that's the vibe.</p>
@@ -526,9 +527,9 @@
     </div>
 
     <!-- History Screen -->
-    <div id="screen-history" class="screen hidden" style="gap: 24px; padding-top: 40px">
+    <div id="screen-history" class="screen hidden" style="gap: 24px; padding-top: 24px">
       <div style="display: flex; justify-content: space-between; align-items: center">
-        <div class="logo">Reflection</div>
+        <div class="logo">Connection</div>
         <button
           class="btn-ghost"
           style="width: auto; padding: 8px 10px; font-size: 16px"

@@ -384,3 +384,17 @@ function copyLink(e) {
     setTimeout(() => (b.textContent = o), 1800);
   });
 }
+
+// ─── Cancel/Exit Game ──────────────────────────────────────────────────────────
+
+function cancelGame() {
+  if (confirm("Exit this game? Your progress won't be saved.")) {
+    clearPoll();
+    state.roomCode = "";
+    state.currentQ = 0;
+    state.answers = [];
+    state.role = "";
+    save();
+    showLibrary();
+  }
+}

@@ -84,7 +84,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 36px 24px 40px;
+  padding: 24px 24px 40px;
   max-width: 520px;
   margin: 0 auto;
   animation: fadeUp 0.35s ease both;
