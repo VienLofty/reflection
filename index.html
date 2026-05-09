@@ -182,6 +182,24 @@
         <p style="font-size: 13px; color: var(--stone)">Loading…</p>
       </div>
       <button class="btn-primary" onclick="createNewGame()">+ Create new game</button>
+      <button class="btn-ghost" onclick="showTemplates()" style="width: 100%">Choose a template</button>
+    </div>
+
+    <!-- ─── Templates Screen ──────────────────────────────────────────────────── -->
+    <div id="screen-templates" class="screen hidden" style="gap: 24px; padding-top: 24px">
+      <div style="display: flex; align-items: center; gap: 12px">
+        <button class="btn-ghost" style="width: auto; padding: 8px 14px; font-size: 13px" onclick="showLibrary()">
+          ← Back
+        </button>
+        <div class="logo">Templates</div>
+      </div>
+      <div>
+        <h2 style="font-size: 30px">Templates</h2>
+        <p style="font-size: 14px; color: var(--stone); margin-top: 8px; line-height: 1.7; font-weight: 300">
+          Start from a ready-made game and edit it however you like.
+        </p>
+      </div>
+      <div id="templates-list" style="display: flex; flex-direction: column; gap: 12px"></div>
     </div>
 
     <!-- ─── User Profile Sidebar ──────────────────────────────────────────────────── -->
@@ -373,29 +391,24 @@
           <span id="room-game-name" style="font-size: 13px; color: var(--ink2); font-weight: 500">—</span>
         </div>
       </div>
-      <div class="card" style="display: flex; flex-direction: column; gap: 22px">
-        <div>
-          <p style="font-size: 14px; color: var(--stone2); margin-bottom: 12px; font-weight: 500">Start a new room</p>
-          <button class="btn-primary" onclick="createRoom()">Create room</button>
+      <div class="card">
+        <p style="font-size: 14px; color: var(--stone2); margin-bottom: 12px; font-weight: 500">Start a new room</p>
+        <button class="btn-primary" onclick="createRoom()">Create room</button>
+      </div>
+      <div>
+        <div
+          style="
+            font-size: 11px;
+            color: var(--stone);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 10px;
+          "
+        >
+          Questions in this game
         </div>
-        <div class="or-divider">or join one</div>
-        <div>
-          <p style="font-size: 14px; color: var(--stone2); margin-bottom: 12px; font-weight: 500">Have a code?</p>
-          <input
-            id="join-code"
-            class="input-field"
-            placeholder="6-letter code"
-            maxlength="6"
-            style="
-              margin-bottom: 12px;
-              text-transform: uppercase;
-              letter-spacing: 0.18em;
-              font-size: 20px;
-              text-align: center;
-            "
-            oninput="this.value = this.value.toUpperCase()"
-          />
-          <button class="btn-primary" onclick="joinRoom()">Join room</button>
+        <div id="room-questions-preview" style="display: flex; flex-direction: column; gap: 8px">
+          <p style="font-size: 13px; color: var(--stone)">Loading…</p>
         </div>
       </div>
       <div id="room-error" class="warn-box hidden"></div>

@@ -11,6 +11,7 @@ const ALL_SCREENS = [
   "screen-waiting-partner",
   "screen-compare",
   "screen-history",
+  "screen-templates",
   "screen-game-editor",
   "screen-question-editor",
 ];

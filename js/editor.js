@@ -14,11 +14,35 @@ async function showLibrary() {
   const userGames = await fbLoadGames();
   list.innerHTML = "";
 
-  // Always show template first
-  list.appendChild(makeGameCard(TEMPLATE_GAME));
+  if (!userGames.length) {
+    list.innerHTML =
+      '<p style="font-size:13px;color:var(--stone)">No games yet. Create one or start from a template.</p>';
+  } else {
+    userGames.forEach((game) => list.appendChild(makeGameCard(game)));
+  }
+}
 
-  // Then user's custom games
-  userGames.forEach((game) => list.appendChild(makeGameCard(game)));
+function showTemplates() {
+  const list = document.getElementById("templates-list");
+  list.innerHTML = "";
+  const TEMPLATES = [TEMPLATE_GAME];
+  TEMPLATES.forEach((t) => {
+    const qCount = t.questions?.length || 0;
+    const card = document.createElement("div");
+    card.className = "card";
+    card.style.cssText = "display:flex;flex-direction:column;gap:14px";
+    card.innerHTML = `
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--ink)">${esc(t.name)}</div>
+        <div style="font-size:13px;color:var(--stone);margin-top:4px">${qCount} question${qCount !== 1 ? "s" : ""}${t.description ? " · " + esc(t.description) : ""}</div>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button class="btn-primary" style="flex:1" onclick="cloneTemplate('${esc(t.id)}')">Use this template</button>
+      </div>
+    `;
+    list.appendChild(card);
+  });
+  show("screen-templates");
 }
 
 function makeGameCard(game) {
@@ -26,7 +50,6 @@ function makeGameCard(game) {
   card.className = "card";
   card.style.cssText = "display:flex;flex-direction:column;gap:14px";
 
-  const isTemplate = !!game.isTemplate;
   const qCount = game.questions?.length || 0;
   const safeId = esc(game.id);
   const safeName = esc(game.name || "Untitled");
@@ -34,18 +57,13 @@ function makeGameCard(game) {
 
   card.innerHTML = `
     <div>
-      ${isTemplate ? `<span style="font-size:10px;color:var(--stone);text-transform:uppercase;letter-spacing:0.12em;font-weight:500;display:block;margin-bottom:5px">Default template</span>` : ""}
       <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--ink)">${safeName}</div>
       <div style="font-size:13px;color:var(--stone);margin-top:4px">${qCount} question${qCount !== 1 ? "s" : ""}${safeDesc ? " · " + safeDesc : ""}</div>
     </div>
-    <div style="display:flex;gap:8px;flex-wrap:wrap">
-      <button class="btn-primary" style="flex:1;min-width:80px" onclick="playGame('${safeId}')">Play →</button>
-      ${
-        isTemplate
-          ? `<button class="btn-ghost" onclick="cloneTemplate()">Clone &amp; edit</button>`
-          : `<button class="btn-ghost" onclick="editGame('${safeId}')">Edit</button>
-           <button class="btn-ghost" style="color:#a0522d;border-color:#d4b9a8" onclick="confirmDeleteGame('${safeId}','${safeName}')">Delete</button>`
-      }
+    <div style="display:grid;gap:8px;grid-template-columns:repeat(2,1fr)">
+      <button class="btn-primary" style="flex:1;min-width:80px;grid-column:span 2" onclick="playGame('${safeId}')">Play →</button>
+      <button class="btn-ghost" onclick="editGame('${safeId}')">Edit</button>
+      <button class="btn-ghost" style="color:#a0522d;border-color:#a0522d;border-width:1px;border-style:solid" onclick="confirmDeleteGame('${safeId}','${safeName}')">Delete</button>
     </div>
   `;
   return card;
@@ -56,7 +74,8 @@ async function playGame(gameId) {
     state.selectedGame = TEMPLATE_GAME;
   } else {
     try {
-      const r = await fetch(`${FIREBASE_URL}/games/${state.deviceId}/${gameId}.json`);
+      const token = getAuthToken();
+      const r = await fetch(`${FIREBASE_URL}/games/${state.userId}/${gameId}.json?auth=${token}`);
       state.selectedGame = (await r.json()) || null;
     } catch (e) {
       state.selectedGame = null;
@@ -64,7 +83,7 @@ async function playGame(gameId) {
   }
 
   if (!state.selectedGame || !state.selectedGame.questions?.length) {
-    alert("This game has no questions yet. Edit it first!");
+    alert("This game has no questions yet. Add some questions first!");
     return;
   }
 
@@ -76,14 +95,45 @@ async function playGame(gameId) {
 
   // Update room screen with selected game name
   document.getElementById("room-game-name").textContent = state.selectedGame.name;
+  renderRoomQuestions();
   show("screen-room");
 }
 
-async function cloneTemplate() {
+function renderRoomQuestions() {
+  const questions = state.selectedGame?.questions || [];
+  const previewDiv = document.getElementById("room-questions-preview");
+  previewDiv.innerHTML = "";
+
+  if (!questions.length) {
+    previewDiv.innerHTML = '<p style="font-size:13px;color:var(--stone)">No questions yet.</p>';
+    return;
+  }
+
+  questions.forEach((q, i) => {
+    const qDiv = document.createElement("div");
+    qDiv.style.cssText =
+      "padding:10px 12px;background:var(--sand2);border-radius:8px;border-left:3px solid var(--sand3)";
+    const typeLabel =
+      {
+        chips: "Multi-select",
+        single: "Single choice",
+        text: "Free text",
+      }[q.type] || "Unknown";
+    const optCount = q.opts?.length || 0;
+    qDiv.innerHTML = `
+      <div style="font-size:12px;font-weight:500;color:var(--ink)">${esc(q.title)}</div>
+      <div style="font-size:11px;color:var(--stone);margin-top:3px">${typeLabel}${optCount ? " · " + optCount + " option" + (optCount !== 1 ? "s" : "") : ""}</div>
+    `;
+    previewDiv.appendChild(qDiv);
+  });
+}
+
+async function cloneTemplate(templateId) {
+  const sourceTemplates = { template: TEMPLATE_GAME };
+  const source = sourceTemplates[templateId] || TEMPLATE_GAME;
   const clone = {
-    ...JSON.parse(JSON.stringify(TEMPLATE_GAME)),
+    ...JSON.parse(JSON.stringify(source)),
     id: genId(),
-    name: "My Reflection",
     isTemplate: false,
     createdAt: Date.now(),
   };
@@ -93,7 +143,8 @@ async function cloneTemplate() {
 
 async function editGame(gameId) {
   try {
-    const r = await fetch(`${FIREBASE_URL}/games/${state.deviceId}/${gameId}.json`);
+    const token = getAuthToken();
+    const r = await fetch(`${FIREBASE_URL}/games/${state.userId}/${gameId}.json?auth=${token}`);
     const data = await r.json();
     if (!data) throw new Error("Not found");
     editGameObj(data);
