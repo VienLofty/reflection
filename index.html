@@ -504,10 +504,14 @@
     <!-- Comparison Results Screen -->
     <div id="screen-compare" class="hidden" style="background: var(--sand); min-height: 100vh">
       <div class="compare-header">
+        <div id="compare-back-row" style="display: none; margin-bottom: 4px">
+          <button class="btn-ghost" style="width: auto; padding: 8px 14px; font-size: 13px" onclick="showHistory()">
+            ← Back
+          </button>
+        </div>
         <div class="logo" style="text-align: center">Connection</div>
         <div style="text-align: center; margin-top: 12px">
-          <h2 style="font-size: 26px">Here's how it looks</h2>
-          <p style="font-size: 13px; color: var(--stone); margin-top: 5px">Curious, not critical — that's the vibe.</p>
+          <h2 id="comp-game-title" style="font-size: 26px">—</h2>
         </div>
         <div class="compare-names">
           <div class="name-badge name-a" id="comp-name-a">—</div>
@@ -521,6 +525,7 @@
         </div>
         <div id="compare-questions"></div>
         <div
+          id="compare-footer"
           style="
             text-align: center;
             padding: 24px 0 32px;
@@ -533,7 +538,7 @@
           <p style="font-size: 13px; color: var(--stone)">Want to save this session?</p>
           <div style="display: flex; gap: 10px; width: 100%">
             <button class="btn-primary" onclick="saveToHistory()" style="flex: 1">Save to history</button>
-            <button class="btn-ghost" onclick="showLibrary()" style="flex: 1">Skip</button>
+            <button class="btn-ghost" onclick="endGame()" style="flex: 1">Skip</button>
           </div>
         </div>
       </div>

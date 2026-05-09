@@ -50,19 +50,34 @@ async function showHistory() {
   }
   list.innerHTML = "";
   entries.forEach((e) => {
-    const date = new Date(e.savedAt).toLocaleDateString(undefined, {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-    });
+    const dt = new Date(e.savedAt);
+    const date = dt.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+    const time = dt.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
     const div = document.createElement("div");
     div.className = "game-card";
     div.innerHTML = `
       <div class="game-card-title">${esc(e.gameName)}</div>
-      <div style="font-size:12px;color:var(--stone);margin-top:4px">${esc(e.nameA)} &amp; ${esc(e.nameB)} &middot; ${date}</div>
+      <div style="font-size:12px;color:var(--stone);margin-top:4px">${esc(e.nameA)} &amp; ${esc(e.nameB)}</div>
+      <div style="font-size:11px;color:var(--stone);margin-top:2px">${date} &middot; ${time}</div>
     `;
+    div.onclick = () => viewHistoryEntry(e);
     list.appendChild(div);
   });
+}
+
+function viewHistoryEntry(entry) {
+  const room = {
+    game: { questions: entry.questions || [], name: entry.gameName || "", title: entry.gameName || "" },
+    answersA: entry.answersA || [],
+    answersB: entry.answersB || [],
+    nameA: entry.nameA || "",
+    nameB: entry.nameB || "",
+  };
+  showComparison(room);
+  const footer = document.getElementById("compare-footer");
+  if (footer) footer.style.display = "none";
+  const backRow = document.getElementById("compare-back-row");
+  if (backRow) backRow.style.display = "";
 }
 
 function toggleDarkMode(event) {

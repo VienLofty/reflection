@@ -413,6 +413,9 @@ function showComparison(room) {
   const nB = room.nameB;
   document.getElementById("comp-name-a").textContent = nA;
   document.getElementById("comp-name-b").textContent = nB;
+  const gameTitle = room.game?.name || room.game?.title || "";
+  const gameTitleEl = document.getElementById("comp-game-title");
+  if (gameTitleEl) gameTitleEl.textContent = gameTitle;
   const allA = aA.flatMap((a) => a.chips || []);
   const allB = aB.flatMap((a) => a.chips || []);
   const shared = [...new Set(allA.filter((x) => allB.includes(x)))];

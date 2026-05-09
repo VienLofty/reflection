@@ -238,6 +238,9 @@ function showComparison(room) {
 
   document.getElementById("comp-name-a").textContent = nA;
   document.getElementById("comp-name-b").textContent = nB;
+  const gameTitle = room.game?.name || room.game?.title || "";
+  const gameTitleEl = document.getElementById("comp-game-title");
+  if (gameTitleEl) gameTitleEl.textContent = gameTitle;
 
   // Shared chips (only from chips/single questions)
   const allA = aA.flatMap((a, i) => (questions[i]?.type === "text" ? [] : a.chips || []));
@@ -342,19 +345,23 @@ function showComparison(room) {
   });
 
   state.lastRoom = room;
+  const footer = document.getElementById("compare-footer");
+  if (footer) footer.style.display = "";
+  const backRow = document.getElementById("compare-back-row");
+  if (backRow) backRow.style.display = "none";
   show("screen-compare");
 }
 
 async function saveToHistory() {
   const room = state.lastRoom;
   if (!room) {
-    showLibrary();
+    endGame();
     return;
   }
   const entry = {
     id: Date.now().toString(),
     savedAt: Date.now(),
-    gameName: room.game?.title || "Untitled",
+    gameName: room.game?.name || room.game?.title || "Untitled",
     nameA: room.nameA || "",
     nameB: room.nameB || "",
     questions: room.game?.questions || [],
@@ -362,7 +369,7 @@ async function saveToHistory() {
     answersB: room.answersB || [],
   };
   await fbSaveHistory(entry);
-  showLibrary();
+  endGame();
 }
 
 // ─── Clipboard ────────────────────────────────────────────────────────────────
@@ -388,13 +395,52 @@ function copyLink(e) {
 // ─── Cancel/Exit Game ──────────────────────────────────────────────────────────
 
 function cancelGame() {
-  if (confirm("Exit this game? Your progress won't be saved.")) {
-    clearPoll();
-    state.roomCode = "";
-    state.currentQ = 0;
-    state.answers = [];
-    state.role = "";
-    save();
+  saveCustom(); // persist current textarea before leaving
+  clearPoll();
+  showLibrary(); // roomCode stays intact — resume card will appear
+}
+
+// ─── Resume / Abandon / End Game ──────────────────────────────────────────────
+
+async function tryResumeGame() {
+  if (!state.roomCode) {
     showLibrary();
+    return;
   }
+  const room = await readRoom(state.roomCode);
+  if (!room) {
+    alert("That game room has expired.");
+    endGame();
+    return;
+  }
+  const submitted = (state.role === "A" && room.doneA) || (state.role === "B" && room.doneB);
+  if (submitted) {
+    if (room.doneA && room.doneB) {
+      showComparison(room);
+    } else {
+      show("screen-waiting-partner");
+      pollForComparison();
+    }
+  } else {
+    state.selectedGame = room.game;
+    renderQuestion(state.currentQ || 0);
+    show("screen-question");
+  }
+}
+
+function abandonGame() {
+  if (!confirm("Abandon this game? Your progress will be lost.")) return;
+  endGame();
+}
+
+function endGame() {
+  clearPoll();
+  state.roomCode = "";
+  state.role = "";
+  state.answers = [];
+  state.currentQ = 0;
+  state.myDone = false;
+  state.lastRoom = null;
+  save();
+  showLibrary();
 }

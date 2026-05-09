@@ -192,7 +192,7 @@ body {
   background: var(--white);
   border-radius: var(--r2);
   padding: 26px;
-  border: 1.5px solid var(--sand3);
+  border: 1px solid var(--sand3);
 }
 
 .input-field {
@@ -280,7 +280,7 @@ body {
   border-radius: var(--r2);
   padding: 24px;
   text-align: center;
-  border: 1.5px solid var(--sand3);
+  border: 1px solid var(--sand3);
 }
 
 .room-code {
@@ -321,7 +321,7 @@ body {
   gap: 8px;
   padding: 10px 16px;
   background: var(--white);
-  border: 1.5px solid var(--sand3);
+  border: 1px solid var(--sand3);
   border-radius: 24px;
   font-size: 13px;
   color: var(--stone2);
@@ -369,7 +369,7 @@ body {
 
 .warn-box {
   background: rgba(232, 213, 200, 0.6);
-  border: 1.5px solid #d4b9a8;
+  border: 1px solid #d4b9a8;
   border-radius: var(--r);
   padding: 14px 16px;
   font-size: 13px;
@@ -379,7 +379,7 @@ body {
 
 .share-hint {
   background: var(--white);
-  border: 1.5px solid var(--sand3);
+  border: 1px solid var(--sand3);
   border-radius: var(--r);
   padding: 16px 18px;
   font-size: 14px;
@@ -393,7 +393,7 @@ body {
 }
 
 .compare-header {
-  background: var(--white);
+  background: var(--sand);
   padding: 28px 24px 20px;
   border-bottom: 2px solid var(--sand3);
   position: sticky;
@@ -414,7 +414,7 @@ body {
   text-align: center;
   font-size: 14px;
   font-weight: 500;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
 }
 
 .name-a {
@@ -425,7 +425,7 @@ body {
 
 .name-b {
   background: var(--sage);
-  color: #4a5e44;
+  color: var(--stone2);
   border-color: #b0c4a8;
 }
 
@@ -439,15 +439,16 @@ body {
 }
 
 .compare-section {
-  background: var(--white);
+  background: var(--sand2);
   border-radius: var(--r2);
   overflow: hidden;
-  border: 1.5px solid var(--sand3);
+  border: 1px solid var(--sand3);
+  margin-bottom: 20px;
 }
 
 .compare-section-header {
   padding: 18px 20px 14px;
-  border-bottom: 1.5px solid var(--sand3);
+  border-bottom: 1px solid var(--sand3);
 }
 
 .compare-q {
@@ -477,7 +478,7 @@ body {
   border-radius: 20px;
   font-size: 12px;
   font-weight: 500;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
 }
 
 .chip-a {
@@ -488,21 +489,21 @@ body {
 
 .chip-b {
   background: var(--sage);
-  color: #4a5e44;
+  color: var(--stone2);
   border-color: #b0c4a8;
 }
 
 .chip-shared {
   background: var(--sand2);
   color: var(--ink2);
-  border-color: var(--sand3);
+  border-color: var(--stone);
 }
 
 .shared-section {
-  background: linear-gradient(135deg, rgba(232, 213, 200, 0.5), rgba(200, 213, 192, 0.5));
+  background: var(--sand3);
   border-radius: var(--r2);
   padding: 22px 24px;
-  border: 1.5px solid var(--sand3);
+  border: 1px solid var(--sand3);
 }
 
 .shared-title {
@@ -521,11 +522,11 @@ body {
 
 .shared-tag {
   padding: 7px 14px;
-  background: var(--white);
+  background: var(--stone2);
   border-radius: 20px;
   font-size: 13px;
-  color: var(--ink2);
-  border: 1.5px solid var(--sand3);
+  color: var(--sand);
+  border: 1px solid var(--sand3);
 }
 
 .custom-text {
@@ -566,7 +567,7 @@ h2 {
   gap: 12px;
   padding: 14px 16px;
   background: var(--white);
-  border: 1.5px solid var(--sand3);
+  border: 1px solid var(--sand3);
   border-radius: var(--r);
   transition: border-color 0.15s;
 }
@@ -578,7 +579,7 @@ h2 {
 .icon-btn {
   padding: 6px 10px;
   background: var(--sand);
-  border: 1.5px solid var(--sand3);
+  border: 1px solid var(--sand3);
   border-radius: 8px;
   cursor: pointer;
   font-size: 12px;
@@ -697,7 +698,7 @@ h2 {
   background: var(--white);
   border-radius: var(--r);
   padding: 16px;
-  border: 1.5px solid var(--sand3);
+  border: 1px solid var(--sand3);
   cursor: pointer;
   transition:
     border-color 0.15s,

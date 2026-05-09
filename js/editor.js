@@ -7,19 +7,52 @@ let editorQuestion = null;
 // ─── Library Screen ───────────────────────────────────────────────────────────
 
 async function showLibrary() {
-  const list = document.getElementById("library-list");
-  list.innerHTML = '<p style="font-size:13px;color:var(--stone);padding:4px 0">Loading your games…</p>';
   show("screen-library");
-
-  const userGames = await fbLoadGames();
+  const list = document.getElementById("library-list");
   list.innerHTML = "";
 
+  // Show resume card if there's an in-progress game
+  if (state.roomCode) {
+    list.appendChild(makeResumeCard());
+  }
+
+  const loading = document.createElement("p");
+  loading.style.cssText = "font-size:13px;color:var(--stone);padding:4px 0";
+  loading.textContent = "Loading your games…";
+  list.appendChild(loading);
+
+  const userGames = await fbLoadGames();
+  list.removeChild(loading);
+
   if (!userGames.length) {
-    list.innerHTML =
-      '<p style="font-size:13px;color:var(--stone)">No games yet. Create one or start from a template.</p>';
+    if (!state.roomCode) {
+      const empty = document.createElement("p");
+      empty.style.cssText = "font-size:13px;color:var(--stone)";
+      empty.textContent = "No games yet. Create one or start from a template.";
+      list.appendChild(empty);
+    }
   } else {
     userGames.forEach((game) => list.appendChild(makeGameCard(game)));
   }
+}
+
+function makeResumeCard() {
+  const gameName = state.selectedGame?.name || "your game";
+  const statusLabel = state.myDone ? "Waiting for partner" : "In progress";
+  const div = document.createElement("div");
+  div.className = "card";
+  div.style.cssText = "display:flex;flex-direction:column;gap:14px;border-left:3px solid var(--ink2)";
+  div.innerHTML = `
+    <div>
+      <div style="font-size:11px;color:var(--ink2);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px;font-weight:500">${esc(statusLabel)}</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--ink)">${esc(gameName)}</div>
+    </div>
+    <div style="display:flex;gap:8px">
+      <button class="btn-primary" style="flex:1" onclick="tryResumeGame()">Resume →</button>
+      <button class="btn-ghost" style="color:#a0522d;border-color:#a0522d;border-width:1px;border-style:solid" onclick="abandonGame()">Abandon</button>
+    </div>
+  `;
+  return div;
 }
 
 function showTemplates() {
