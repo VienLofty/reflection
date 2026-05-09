@@ -63,7 +63,7 @@ html[data-dark-mode="true"] .btn-ghost:hover {
 
 html[data-dark-mode="true"] .input-field {
   background: var(--sand2);
-  color: #2c2420;
+  color: var(--stone2);
   border-color: var(--sand3);
 }
 
@@ -633,9 +633,9 @@ h2 {
 }
 
 .type-btn.selected {
-  background: var(--ink2);
-  color: #fff;
-  border-color: var(--ink2);
+  background: var(--stone);
+  color: var(--sand2);
+  border-color: var(--stone2);
 }
 
 /* ─── Profile Sidebar ──────────────────────────────────────────────────────── */
@@ -717,13 +717,13 @@ h2 {
 
 html[data-dark-mode="true"] .card {
   background: var(--sand2);
-  color: #2c2420;
+  color: var(--stone2);
   border-color: var(--sand3);
 }
 
 html[data-dark-mode="true"] .game-card {
   background: var(--sand2);
-  color: #2c2420;
+  color: var(--stone2);
   border-color: var(--sand3);
 }
 
@@ -733,13 +733,13 @@ html[data-dark-mode="true"] .game-card:hover {
 }
 
 html[data-dark-mode="true"] .game-card-title {
-  color: #2c2420;
+  color: var(--stone2);
 }
 
 html[data-dark-mode="true"] .question-list-item {
   background: var(--sand2);
   border-color: var(--sand3);
-  color: #2c2420;
+  color: var(--stone2);
 }
 
 html[data-dark-mode="true"] .question-list-item:hover {
