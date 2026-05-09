@@ -137,8 +137,7 @@ function renderQuestion(i) {
     chipsContainer.style.display = "";
     customSection.style.display = "";
     customLabelEl.textContent = "Anything to add?";
-    document.getElementById("custom-textarea").placeholder =
-      "Your own words, if the options don't quite fit…";
+    document.getElementById("custom-textarea").placeholder = "Your own words, if the options don't quite fit…";
 
     (q.opts || []).forEach((opt) => {
       const ch = document.createElement("button");
@@ -186,8 +185,7 @@ function nextQuestion() {
 }
 
 function saveCustom() {
-  state.answers[state.currentQ].custom =
-    document.getElementById("custom-textarea").value;
+  state.answers[state.currentQ].custom = document.getElementById("custom-textarea").value;
   save();
 }
 
@@ -242,12 +240,8 @@ function showComparison(room) {
   document.getElementById("comp-name-b").textContent = nB;
 
   // Shared chips (only from chips/single questions)
-  const allA = aA.flatMap((a, i) =>
-    questions[i]?.type === "text" ? [] : (a.chips || [])
-  );
-  const allB = aB.flatMap((a, i) =>
-    questions[i]?.type === "text" ? [] : (a.chips || [])
-  );
+  const allA = aA.flatMap((a, i) => (questions[i]?.type === "text" ? [] : a.chips || []));
+  const allB = aB.flatMap((a, i) => (questions[i]?.type === "text" ? [] : a.chips || []));
   const shared = [...new Set(allA.filter((x) => allB.includes(x)))];
 
   const st = document.getElementById("shared-tags");
@@ -289,12 +283,14 @@ function showComparison(room) {
       if (!cA && !cB) {
         h += `<p style="font-size:13px;color:var(--stone)">Neither of you answered this one.</p>`;
       } else {
-        if (cA) h += `
+        if (cA)
+          h += `
           <div>
             <div style="font-size:11px;color:var(--stone);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">${esc(nA)}</div>
             <p class="custom-text">"${esc(cA)}"</p>
           </div>`;
-        if (cB) h += `
+        if (cB)
+          h += `
           <div>
             <div style="font-size:11px;color:var(--stone);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">${esc(nB)}</div>
             <p class="custom-text">"${esc(cB)}"</p>
@@ -308,23 +304,31 @@ function showComparison(room) {
 
       if (shQ.length) {
         h += `<div><div style="font-size:11px;color:var(--stone);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:7px">Both</div><div class="answer-chips-row">`;
-        shQ.forEach((c) => { h += `<span class="mini-chip chip-shared">${esc(c)}</span>`; });
+        shQ.forEach((c) => {
+          h += `<span class="mini-chip chip-shared">${esc(c)}</span>`;
+        });
         h += `</div></div>`;
       }
       if (oA.length) {
         h += `<div><div style="font-size:11px;color:var(--stone);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:7px">${esc(nA)}</div><div class="answer-chips-row">`;
-        oA.forEach((c) => { h += `<span class="mini-chip chip-a">${esc(c)}</span>`; });
+        oA.forEach((c) => {
+          h += `<span class="mini-chip chip-a">${esc(c)}</span>`;
+        });
         h += `</div></div>`;
       }
       if (oB.length) {
         h += `<div><div style="font-size:11px;color:var(--stone);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:7px">${esc(nB)}</div><div class="answer-chips-row">`;
-        oB.forEach((c) => { h += `<span class="mini-chip chip-b">${esc(c)}</span>`; });
+        oB.forEach((c) => {
+          h += `<span class="mini-chip chip-b">${esc(c)}</span>`;
+        });
         h += `</div></div>`;
       }
       if (cA || cB) {
         h += `<div style="border-top:1.5px solid var(--sand3);padding-top:12px;margin-top:6px;display:flex;flex-direction:column;gap:10px">`;
-        if (cA) h += `<div><span style="font-size:11px;color:var(--stone);text-transform:uppercase;letter-spacing:0.1em">${esc(nA)}:</span><p class="custom-text" style="margin-top:5px">"${esc(cA)}"</p></div>`;
-        if (cB) h += `<div><span style="font-size:11px;color:var(--stone);text-transform:uppercase;letter-spacing:0.1em">${esc(nB)}:</span><p class="custom-text" style="margin-top:5px">"${esc(cB)}"</p></div>`;
+        if (cA)
+          h += `<div><span style="font-size:11px;color:var(--stone);text-transform:uppercase;letter-spacing:0.1em">${esc(nA)}:</span><p class="custom-text" style="margin-top:5px">"${esc(cA)}"</p></div>`;
+        if (cB)
+          h += `<div><span style="font-size:11px;color:var(--stone);text-transform:uppercase;letter-spacing:0.1em">${esc(nB)}:</span><p class="custom-text" style="margin-top:5px">"${esc(cB)}"</p></div>`;
         h += `</div>`;
       }
       if (!chA.length && !chB.length && !cA && !cB) {

@@ -16,10 +16,10 @@
       <div style="text-align: center">
         <div class="logo">Reflection</div>
         <h2 style="margin-top: 18px">
-          Your games.<br /><em style="font-style: italic; color: var(--stone2)">Two people.</em>
+          It's just<br /><em style="font-style: italic; color: var(--stone2)">you two.</em>
         </h2>
         <p style="font-size: 15px; color: var(--stone); margin-top: 16px; line-height: 1.8; font-weight: 300">
-          Answer honestly, compare at the end. No scores — just the good stuff.
+          Pick a game, answer from the heart, <br />then see what you both think.
         </p>
       </div>
       <div class="card" style="display: flex; flex-direction: column; gap: 18px">
@@ -38,11 +38,45 @@
           >
           <input id="name-input" class="input-field" placeholder="First name is fine" maxlength="30" />
         </div>
-        <button class="btn-primary" onclick="goToRoom()">Let's go →</button>
+        <button class="btn-primary" onclick="goToLibrary()">Browse games →</button>
+        <button class="btn-secondary" onclick="goToJoinCode()" style="width: 100%">Join with code</button>
       </div>
       <p style="font-size: 13px; color: var(--stone); text-align: center; line-height: 1.7">
-        Your answers are private until you've both finished.
+        Your answers stay private until you've both finished.
       </p>
+    </div>
+
+    <!-- ─── Join with Code Screen ──────────────────────────────────────────────────── -->
+    <div id="screen-join-code" class="screen hidden" style="gap: 26px; padding-top: 40px; justify-content: center">
+      <div style="text-align: center">
+        <div class="logo">Reflection</div>
+        <h2 style="margin-top: 18px; font-size: 30px">Join a game</h2>
+        <p style="font-size: 14px; color: var(--stone); margin-top: 10px; line-height: 1.7; font-weight: 300">
+          Enter the code they shared with you. The game will load automatically.
+        </p>
+      </div>
+      <div class="card" style="display: flex; flex-direction: column; gap: 18px">
+        <div>
+          <label class="custom-label">Room code</label>
+          <input
+            id="join-code-input"
+            class="input-field"
+            placeholder="6-letter code"
+            maxlength="6"
+            style="
+              margin-top: 6px;
+              text-transform: uppercase;
+              letter-spacing: 0.18em;
+              font-size: 18px;
+              text-align: center;
+            "
+            oninput="this.value = this.value.toUpperCase()"
+          />
+        </div>
+        <button class="btn-primary" onclick="submitJoinCode()">Join →</button>
+        <button class="btn-secondary" onclick="goToLanding()" style="width: 100%">Go back</button>
+      </div>
+      <div id="join-code-error" class="warn-box hidden"></div>
     </div>
 
     <!-- ─── Library Screen ──────────────────────────────────────────────────── -->
@@ -324,5 +358,6 @@
     <script src="js/editor.js"></script>
     <script src="js/play.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/join.js"></script>
   </body>
 </html>
