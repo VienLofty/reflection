@@ -118,8 +118,8 @@
           Enter the code they shared with you. The game will load automatically.
         </p>
       </div>
-      <div class="card" style="display: flex; flex-direction: column; gap: 18px">
-        <div>
+      <div class="card" style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px">
+        <div style="grid-column: span 2">
           <label class="custom-label">Room code</label>
           <input
             id="join-code-input"
@@ -136,8 +136,8 @@
             oninput="this.value = this.value.toUpperCase()"
           />
         </div>
-        <button class="btn-primary" onclick="submitJoinCode()">Join →</button>
         <button class="btn-secondary" onclick="showLibrary()" style="width: 100%">Go back</button>
+        <button class="btn-primary" onclick="submitJoinCode()">Join →</button>
       </div>
       <div id="join-code-error" class="warn-box hidden"></div>
     </div>
@@ -155,6 +155,18 @@
           👤
         </button>
       </div>
+      <div
+        style="
+          position: sticky;
+          bottom: 0;
+          z-index: 10;
+          padding-top: 12px;
+          background: var(--sand);
+          border-top: 1px solid var(--sand2);
+        "
+      >
+        <button class="btn-secondary" onclick="show('screen-join-code')" style="width: 100%">Join with code</button>
+      </div>
       <div>
         <div style="display: flex; justify-content: space-between; align-items: baseline">
           <h2 style="font-size: 30px">Your games</h2>
@@ -170,18 +182,6 @@
         <p style="font-size: 13px; color: var(--stone)">Loading…</p>
       </div>
       <button class="btn-primary" onclick="createNewGame()">+ Create new game</button>
-      <div
-        style="
-          position: sticky;
-          bottom: 0;
-          z-index: 10;
-          padding-top: 12px;
-          background: var(--sand);
-          border-top: 1px solid var(--sand2);
-        "
-      >
-        <button class="btn-secondary" onclick="show('screen-join-code')" style="width: 100%">Join with code</button>
-      </div>
     </div>
 
     <!-- ─── User Profile Sidebar ──────────────────────────────────────────────────── -->

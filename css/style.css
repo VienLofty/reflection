@@ -31,6 +31,46 @@ html[data-dark-mode="true"] {
   --sage: #4a5648;
 }
 
+html[data-dark-mode="true"] .btn-primary {
+  color: #2c2420;
+}
+
+html[data-dark-mode="true"] .btn-primary:hover {
+  color: #2c2420;
+}
+
+html[data-dark-mode="true"] .btn-secondary {
+  background: var(--sand2);
+  color: var(--stone2);
+  border-color: var(--sand3);
+}
+
+html[data-dark-mode="true"] .btn-secondary:hover {
+  border-color: var(--stone);
+  background: var(--sand3);
+  color: var(--stone2);
+}
+
+html[data-dark-mode="true"] .btn-ghost {
+  color: var(--stone2);
+  border-color: var(--sand3);
+}
+
+html[data-dark-mode="true"] .btn-ghost:hover {
+  border-color: var(--stone);
+  color: var(--stone2);
+}
+
+html[data-dark-mode="true"] .input-field {
+  background: var(--sand2);
+  color: #2c2420;
+  border-color: var(--sand3);
+}
+
+html[data-dark-mode="true"] .input-field:focus {
+  border-color: var(--stone);
+}
+
 html,
 body {
   height: 100%;
@@ -69,7 +109,7 @@ body {
   font-family: "Cormorant Garamond", serif;
   font-size: 13px;
   letter-spacing: 0.22em;
-  color: var(--stone);
+  color: var(--stone3);
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -162,7 +202,7 @@ body {
   border-radius: var(--r);
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
-  background: var(--white);
+  background: var(--sand);
   color: var(--ink);
   outline: none;
   transition: border-color 0.2s;
@@ -649,4 +689,59 @@ h2 {
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+/* ─── Game Cards (History, Library) ─────────────────────────────────────── */
+
+.game-card {
+  background: var(--white);
+  border-radius: var(--r);
+  padding: 16px;
+  border: 1.5px solid var(--sand3);
+  cursor: pointer;
+  transition:
+    border-color 0.15s,
+    background 0.15s;
+}
+
+.game-card:hover {
+  border-color: var(--stone);
+  background: var(--sand);
+}
+
+.game-card-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+html[data-dark-mode="true"] .card {
+  background: var(--sand2);
+  color: #2c2420;
+  border-color: var(--sand3);
+}
+
+html[data-dark-mode="true"] .game-card {
+  background: var(--sand2);
+  color: #2c2420;
+  border-color: var(--sand3);
+}
+
+html[data-dark-mode="true"] .game-card:hover {
+  background: var(--sand3);
+  border-color: var(--stone);
+}
+
+html[data-dark-mode="true"] .game-card-title {
+  color: #2c2420;
+}
+
+html[data-dark-mode="true"] .question-list-item {
+  background: var(--sand2);
+  border-color: var(--sand3);
+  color: #2c2420;
+}
+
+html[data-dark-mode="true"] .question-list-item:hover {
+  border-color: var(--stone);
 }
