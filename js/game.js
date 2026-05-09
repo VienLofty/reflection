@@ -479,52 +479,35 @@ function showComparison(room) {
   show("screen-compare");
 }
 
-// Backend API (JSONBin)
-const API = "https://api.jsonbin.io/v3";
+// Backend API (Firebase Realtime Database)
+const FIREBASE_URL = "https://reflection-app-63a02-default-rtdb.asia-southeast1.firebasedatabase.app";
 
 async function writeRoom(code, data) {
   try {
-    const binId = localStorage.getItem("bin:" + code);
-    if (binId) {
-      const r = await fetch(`${API}/b/${binId}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          "X-Bin-Versioning": "false",
-        },
-        body: JSON.stringify(data),
-      });
-      return r.ok;
-    } else {
-      const r = await fetch(`${API}/b`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "X-Bin-Name": code,
-          "X-Access-Control": "false",
-        },
-        body: JSON.stringify(data),
-      });
-      if (!r.ok) return false;
-      const j = await r.json();
-      const id = j.metadata?.id;
-      if (id) localStorage.setItem("bin:" + code, id);
-      return true;
-    }
+    const url = `${FIREBASE_URL}/rooms/${code}.json`;
+    const r = await fetch(url, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+    return r.ok;
   } catch (e) {
+    console.error("Write error:", e);
     return false;
   }
 }
 
 async function readRoom(code) {
   try {
-    const binId = localStorage.getItem("bin:" + code);
-    if (!binId) return null;
-    const r = await fetch(`${API}/b/${binId}/latest`);
+    const url = `${FIREBASE_URL}/rooms/${code}.json`;
+    const r = await fetch(url);
     if (!r.ok) return null;
-    const j = await r.json();
-    return j.record || null;
+    const data = await r.json();
+    return data || null;
   } catch (e) {
+    console.error("Read error:", e);
     return null;
   }
 }
