@@ -24,7 +24,18 @@
       </div>
       <div class="card" style="display: flex; flex-direction: column; gap: 18px">
         <div>
-          <label style="font-size: 12px; color: var(--stone2); font-weight: 500; display: block; margin-bottom: 9px; text-transform: uppercase; letter-spacing: 0.1em">Your name</label>
+          <label
+            style="
+              font-size: 12px;
+              color: var(--stone2);
+              font-weight: 500;
+              display: block;
+              margin-bottom: 9px;
+              text-transform: uppercase;
+              letter-spacing: 0.1em;
+            "
+            >Your name</label
+          >
           <input id="name-input" class="input-field" placeholder="First name is fine" maxlength="30" />
         </div>
         <button class="btn-primary" onclick="goToRoom()">Let's go →</button>
@@ -52,23 +63,39 @@
     <!-- ─── Game Editor Screen ──────────────────────────────────────────────── -->
     <div id="screen-game-editor" class="screen hidden" style="gap: 22px; padding-top: 32px">
       <div style="display: flex; align-items: center; gap: 12px">
-        <button class="btn-ghost" style="width: auto; padding: 10px 14px; flex-shrink:0" onclick="showLibrary()">← Back</button>
+        <button class="btn-ghost" style="width: auto; padding: 10px 14px; flex-shrink: 0" onclick="showLibrary()">
+          ← Back
+        </button>
         <div class="logo">Game editor</div>
       </div>
       <div style="display: flex; flex-direction: column; gap: 12px">
         <div>
           <label class="custom-label">Game name</label>
-          <input id="editor-game-name" class="input-field" placeholder="e.g. Our questions" maxlength="60" style="margin-top:6px" />
+          <input
+            id="editor-game-name"
+            class="input-field"
+            placeholder="e.g. Our questions"
+            maxlength="60"
+            style="margin-top: 6px"
+          />
         </div>
         <div>
           <label class="custom-label">Short description (optional)</label>
-          <input id="editor-game-desc" class="input-field" placeholder="What's this game about?" maxlength="120" style="margin-top:6px" />
+          <input
+            id="editor-game-desc"
+            class="input-field"
+            placeholder="What's this game about?"
+            maxlength="120"
+            style="margin-top: 6px"
+          />
         </div>
       </div>
       <div>
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px">
           <span class="custom-label" style="margin-bottom: 0">Questions</span>
-          <button class="btn-ghost" style="width: auto; padding: 8px 14px; font-size: 13px" onclick="addNewQuestion()">+ Add question</button>
+          <button class="btn-ghost" style="width: auto; padding: 8px 14px; font-size: 13px" onclick="addNewQuestion()">
+            + Add question
+          </button>
         </div>
         <div id="editor-questions-list" style="display: flex; flex-direction: column; gap: 8px"></div>
       </div>
@@ -80,17 +107,35 @@
     <!-- ─── Question Editor Screen ─────────────────────────────────────────── -->
     <div id="screen-question-editor" class="screen hidden" style="gap: 20px; padding-top: 32px">
       <div style="display: flex; align-items: center; gap: 12px">
-        <button class="btn-ghost" style="width: auto; padding: 10px 14px; flex-shrink:0" onclick="show('screen-game-editor')">← Back</button>
+        <button
+          class="btn-ghost"
+          style="width: auto; padding: 10px 14px; flex-shrink: 0"
+          onclick="show('screen-game-editor')"
+        >
+          ← Back
+        </button>
         <div class="logo">Question editor</div>
       </div>
       <div style="display: flex; flex-direction: column; gap: 12px">
         <div>
           <label class="custom-label">Question</label>
-          <input id="qeditor-title" class="input-field" placeholder="e.g. What's your biggest dream?" maxlength="120" style="margin-top:6px" />
+          <input
+            id="qeditor-title"
+            class="input-field"
+            placeholder="e.g. What's your biggest dream?"
+            maxlength="120"
+            style="margin-top: 6px"
+          />
         </div>
         <div>
           <label class="custom-label">Description (optional)</label>
-          <input id="qeditor-desc" class="input-field" placeholder="A little context for players" maxlength="160" style="margin-top:6px" />
+          <input
+            id="qeditor-desc"
+            class="input-field"
+            placeholder="A little context for players"
+            maxlength="160"
+            style="margin-top: 6px"
+          />
         </div>
       </div>
       <div>
@@ -104,7 +149,9 @@
       <div id="qeditor-opts-section" style="display: flex; flex-direction: column; gap: 8px">
         <div style="display: flex; justify-content: space-between; align-items: center">
           <label class="custom-label" style="margin-bottom: 0">Answer options</label>
-          <button class="btn-ghost" style="width: auto; padding: 7px 12px; font-size: 12px" onclick="addOption()">+ Add option</button>
+          <button class="btn-ghost" style="width: auto; padding: 7px 12px; font-size: 12px" onclick="addOption()">
+            + Add option
+          </button>
         </div>
         <div id="qeditor-opts-list" style="display: flex; flex-direction: column; gap: 8px"></div>
       </div>
@@ -115,13 +162,23 @@
     <div id="screen-room" class="screen hidden" style="gap: 26px; padding-top: 40px">
       <div>
         <div style="margin-bottom: 16px">
-          <button class="btn-ghost" style="width:auto;padding:8px 12px;font-size:12px" onclick="showLibrary()">← Games</button>
+          <button class="btn-ghost" style="width: auto; padding: 8px 12px; font-size: 12px" onclick="showLibrary()">
+            ← Games
+          </button>
         </div>
         <div class="logo">Reflection</div>
         <h2 style="margin-top: 12px; font-size: 30px">Set up<br />your room</h2>
-        <div style="margin-top:10px;padding:8px 12px;background:var(--sand2);border-radius:var(--r);display:inline-block">
-          <span style="font-size:12px;color:var(--stone)">Playing: </span>
-          <span id="room-game-name" style="font-size:13px;color:var(--ink2);font-weight:500">—</span>
+        <div
+          style="
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: var(--sand2);
+            border-radius: var(--r);
+            display: inline-block;
+          "
+        >
+          <span style="font-size: 12px; color: var(--stone)">Playing: </span>
+          <span id="room-game-name" style="font-size: 13px; color: var(--ink2); font-weight: 500">—</span>
         </div>
       </div>
       <div class="card" style="display: flex; flex-direction: column; gap: 22px">
@@ -150,6 +207,7 @@
         </div>
       </div>
       <div id="room-error" class="warn-box hidden"></div>
+      <button class="btn-secondary" onclick="showLibrary()" style="margin-top: 8px">Cancel</button>
     </div>
 
     <!-- Waiting for Partner Screen -->
@@ -191,7 +249,9 @@
             id="q-num"
             >Question 1</span
           >
-          <span style="font-size: 11px; color: var(--stone)"><span id="q-index">1</span> of <span id="q-total">10</span></span>
+          <span style="font-size: 11px; color: var(--stone)"
+            ><span id="q-index">1</span> of <span id="q-total">10</span></span
+          >
         </div>
       </div>
       <div>
