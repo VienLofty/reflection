@@ -55,11 +55,17 @@ function makeResumeCard() {
   return div;
 }
 
-function showTemplates() {
+async function showTemplates() {
   const list = document.getElementById("templates-list");
+  list.innerHTML = '<p style="font-size:13px;color:var(--stone)">Loading templates…</p>';
+  show("screen-templates");
+  const templates = await loadTemplates();
   list.innerHTML = "";
-  const TEMPLATES = [TEMPLATE_GAME];
-  TEMPLATES.forEach((t) => {
+  if (!templates.length) {
+    list.innerHTML = '<p style="font-size:13px;color:var(--stone)">No templates available.</p>';
+    return;
+  }
+  templates.forEach((t) => {
     const qCount = t.questions?.length || 0;
     const card = document.createElement("div");
     card.className = "card";
@@ -75,7 +81,6 @@ function showTemplates() {
     `;
     list.appendChild(card);
   });
-  show("screen-templates");
 }
 
 function makeGameCard(game) {
@@ -103,8 +108,10 @@ function makeGameCard(game) {
 }
 
 async function playGame(gameId) {
-  if (gameId === "template") {
-    state.selectedGame = TEMPLATE_GAME;
+  const templates = await loadTemplates();
+  const tmpl = templates.find((t) => t.id === gameId);
+  if (tmpl) {
+    state.selectedGame = tmpl;
   } else {
     try {
       const token = getAuthToken();
@@ -162,8 +169,8 @@ function renderRoomQuestions() {
 }
 
 async function cloneTemplate(templateId) {
-  const sourceTemplates = { template: TEMPLATE_GAME };
-  const source = sourceTemplates[templateId] || TEMPLATE_GAME;
+  const templates = await loadTemplates();
+  const source = templates.find((t) => t.id === templateId) || TEMPLATE_GAME;
   const clone = {
     ...JSON.parse(JSON.stringify(source)),
     id: genId(),

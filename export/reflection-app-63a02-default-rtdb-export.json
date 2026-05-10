@@ -1,0 +1,3217 @@
+{
+  "games": {
+    "ChYuFR8Mv0N6nFIk85HjgiZcZbX2": {
+      "45f117ae-c9e2-4f7d-99cc-c1f6a9f5a8bc": {
+        "createdAt": 1778316473215,
+        "description": "Ten thoughtful questions about love, space, and connection.",
+        "id": "45f117ae-c9e2-4f7d-99cc-c1f6a9f5a8bc",
+        "isTemplate": false,
+        "name": "Reflection",
+        "questions": [
+          {
+            "desc": "Think about actual moments. When do you genuinely feel it?",
+            "id": "tq1",
+            "opts": [
+              "Physical closeness",
+              "Quiet companionship",
+              "Deep conversation",
+              "Quality time",
+              "Shared adventure",
+              "Emotional reassurance",
+              "Acts of care",
+              "Being understood",
+              "Freedom and trust",
+              "Playfulness"
+            ],
+            "title": "When do you feel most loved?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not safe like nothing bad happens. Safe like you can be yourself.",
+            "id": "tq2",
+            "opts": [
+              "Honesty",
+              "Consistency",
+              "Freedom",
+              "Reassurance",
+              "Calm communication",
+              "Loyalty",
+              "Emotional openness",
+              "Patience",
+              "Stability",
+              "Acceptance"
+            ],
+            "title": "What makes you feel safe with someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "The small things that build up over time.",
+            "id": "tq3",
+            "opts": [
+              "Constant texting",
+              "Jealousy",
+              "Emotional distance",
+              "Criticism",
+              "Controlling behavior",
+              "Needing constant reassurance",
+              "Lack of communication",
+              "Feeling ignored",
+              "Pressure to report everything",
+              "Lack of trust"
+            ],
+            "title": "What quietly wears you down in a relationship?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not what you think you should — what just comes out of you.",
+            "id": "tq4",
+            "opts": [
+              "Loyalty",
+              "Calm presence",
+              "Practical support",
+              "Affection",
+              "Protection",
+              "Deep conversation",
+              "Freedom",
+              "Encouragement",
+              "Patience",
+              "Acts of service"
+            ],
+            "title": "What do you naturally give when you love someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "Everyone's different. Be honest.",
+            "id": "tq5",
+            "opts": [
+              "Daily communication",
+              "Plenty of alone time",
+              "Shared hobbies",
+              "Independent lifestyles",
+              "Frequent affection",
+              "Flexible schedules",
+              "Personal space",
+              "Deep emotional connection",
+              "Quiet coexistence",
+              "Adventurous experiences"
+            ],
+            "title": "How much togetherness and space do you need?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not perfect — just good. Day to day.",
+            "id": "tq6",
+            "opts": [
+              "Peaceful",
+              "Supportive",
+              "Adventurous",
+              "Stable",
+              "Emotionally deep",
+              "Playful",
+              "Growth-oriented",
+              "Relaxed",
+              "Honest",
+              "Inspiring"
+            ],
+            "title": "What does a good relationship feel like to you?",
+            "type": "chips"
+          },
+          {
+            "desc": "The non-negotiable parts of yourself.",
+            "id": "tq7",
+            "opts": [
+              "Peace",
+              "Freedom",
+              "Friendships",
+              "Personal philosophy",
+              "Career goals",
+              "Creativity",
+              "Alone time",
+              "Family connections",
+              "Hobbies",
+              "Independence"
+            ],
+            "title": "What are you not willing to give up, even for love?",
+            "type": "chips"
+          },
+          {
+            "desc": "Most people carry something in. What's yours?",
+            "id": "tq8",
+            "opts": [
+              "Abandonment",
+              "Losing freedom",
+              "Betrayal",
+              "Emotional pressure",
+              "Not being understood",
+              "Growing apart",
+              "Being controlled",
+              "Loneliness",
+              "Losing identity",
+              "Conflict"
+            ],
+            "title": "What fears do you bring into relationships?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not a holiday. Just a regular day that feels right.",
+            "id": "tq9",
+            "opts": [
+              "Cooking together",
+              "Quiet evenings",
+              "Traveling",
+              "Supporting each other's goals",
+              "Comfortable silence",
+              "Physical affection",
+              "Building a future together",
+              "Exploring together",
+              "Independent but connected",
+              "Sharing responsibilities"
+            ],
+            "title": "What does a normal, happy day together look like?",
+            "type": "chips"
+          },
+          {
+            "desc": "What actually happens when things get hard?",
+            "id": "tq10",
+            "opts": [
+              "Stay calm",
+              "Need space first",
+              "Become emotional",
+              "Avoid conflict",
+              "Want immediate discussion",
+              "Withdraw quietly",
+              "Try to solve logically",
+              "Need reassurance",
+              "Reflect before speaking",
+              "Fear hurting the other person"
+            ],
+            "title": "How do you tend to handle conflict?",
+            "type": "chips"
+          }
+        ]
+      }
+    }
+  },
+  "history": {
+    "ChYuFR8Mv0N6nFIk85HjgiZcZbX2": {
+      "1778340994333": {
+        "answersA": [
+          {
+            "chips": [
+              "Physical closeness",
+              "Quiet companionship",
+              "Deep conversation",
+              "Quality time",
+              "Shared adventure",
+              "Freedom and trust",
+              "Playfulness"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Honesty",
+              "Freedom",
+              "Calm communication",
+              "Loyalty",
+              "Emotional openness"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Jealousy",
+              "Emotional distance",
+              "Criticism",
+              "Controlling behavior",
+              "Needing constant reassurance",
+              "Lack of communication",
+              "Feeling ignored",
+              "Pressure to report everything",
+              "Lack of trust"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Loyalty",
+              "Calm presence",
+              "Practical support",
+              "Protection",
+              "Deep conversation",
+              "Freedom",
+              "Encouragement",
+              "Patience"
+            ],
+            "custom": "Love actions"
+          },
+          {
+            "chips": [
+              "Daily communication",
+              "Independent lifestyles",
+              "Flexible schedules",
+              "Deep emotional connection",
+              "Quiet coexistence",
+              "Adventurous experiences"
+            ],
+            "custom": "Sometimes for alone time"
+          },
+          {
+            "chips": [
+              "Peaceful",
+              "Supportive",
+              "Adventurous",
+              "Emotionally deep",
+              "Playful",
+              "Growth-oriented",
+              "Inspiring",
+              "Honest"
+            ],
+            "custom": "Truly trust each other\nWilling to communicate to solve problems even though feeling uncomfortable "
+          },
+          {
+            "chips": [
+              "Freedom",
+              "Friendships",
+              "Personal philosophy",
+              "Family connections",
+              "Independence"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Losing freedom",
+              "Emotional pressure",
+              "Being controlled",
+              "Losing identity"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Cooking together",
+              "Quiet evenings",
+              "Traveling",
+              "Supporting each other's goals",
+              "Comfortable silence",
+              "Physical affection",
+              "Building a future together",
+              "Exploring together",
+              "Independent but connected",
+              "Sharing responsibilities"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Stay calm",
+              "Reflect before speaking",
+              "Fear hurting the other person",
+              "Avoid conflict"
+            ],
+            "custom": ""
+          }
+        ],
+        "answersB": [
+          {
+            "chips": [
+              "Physical closeness",
+              "Deep conversation",
+              "Quality time",
+              "Emotional reassurance",
+              "Acts of care",
+              "Being understood",
+              "Playfulness"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Emotional openness",
+              "Stability",
+              "Patience",
+              "Loyalty",
+              "Calm communication",
+              "Consistency",
+              "Reassurance"
+            ],
+            "custom": "Transparency instead of honesty"
+          },
+          {
+            "chips": [
+              "Jealousy",
+              "Criticism",
+              "Emotional distance",
+              "Lack of communication",
+              "Feeling ignored",
+              "Lack of trust"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Loyalty",
+              "Protection",
+              "Deep conversation",
+              "Encouragement",
+              "Patience",
+              "Affection"
+            ],
+            "custom": "Be present in angry mode"
+          },
+          {
+            "chips": [
+              "Daily communication",
+              "Shared hobbies",
+              "Frequent affection",
+              "Deep emotional connection",
+              "Quiet coexistence",
+              "Adventurous experiences"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Supportive",
+              "Stable",
+              "Emotionally deep",
+              "Growth-oriented",
+              "Inspiring",
+              "Playful",
+              "Relaxed",
+              "Peaceful"
+            ],
+            "custom": "Transparent instead of honest"
+          },
+          {
+            "chips": [
+              "Family connections",
+              "Hobbies",
+              "Personal philosophy"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Conflict",
+              "Loneliness",
+              "Emotional pressure",
+              "Abandonment",
+              "Not being understood",
+              "Growing apart",
+              "Losing identity",
+              "Betrayal"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Quiet evenings",
+              "Traveling",
+              "Supporting each other's goals",
+              "Physical affection",
+              "Building a future together",
+              "Exploring together",
+              "Sharing responsibilities",
+              "Cooking together"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Become emotional",
+              "Want immediate discussion",
+              "Try to solve logically",
+              "Need reassurance",
+              "Fear hurting the other person"
+            ],
+            "custom": ""
+          }
+        ],
+        "gameName": "Untitled",
+        "id": "1778340994333",
+        "nameA": "Demen",
+        "nameB": "vanghoanghan",
+        "questions": [
+          {
+            "desc": "Think about actual moments. When do you genuinely feel it?",
+            "id": "tq1",
+            "opts": [
+              "Physical closeness",
+              "Quiet companionship",
+              "Deep conversation",
+              "Quality time",
+              "Shared adventure",
+              "Emotional reassurance",
+              "Acts of care",
+              "Being understood",
+              "Freedom and trust",
+              "Playfulness"
+            ],
+            "title": "When do you feel most loved?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not safe like nothing bad happens. Safe like you can be yourself.",
+            "id": "tq2",
+            "opts": [
+              "Honesty",
+              "Consistency",
+              "Freedom",
+              "Reassurance",
+              "Calm communication",
+              "Loyalty",
+              "Emotional openness",
+              "Patience",
+              "Stability",
+              "Acceptance"
+            ],
+            "title": "What makes you feel safe with someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "The small things that build up over time.",
+            "id": "tq3",
+            "opts": [
+              "Constant texting",
+              "Jealousy",
+              "Emotional distance",
+              "Criticism",
+              "Controlling behavior",
+              "Needing constant reassurance",
+              "Lack of communication",
+              "Feeling ignored",
+              "Pressure to report everything",
+              "Lack of trust"
+            ],
+            "title": "What quietly wears you down in a relationship?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not what you think you should — what just comes out of you.",
+            "id": "tq4",
+            "opts": [
+              "Loyalty",
+              "Calm presence",
+              "Practical support",
+              "Affection",
+              "Protection",
+              "Deep conversation",
+              "Freedom",
+              "Encouragement",
+              "Patience",
+              "Acts of service"
+            ],
+            "title": "What do you naturally give when you love someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "Everyone's different. Be honest.",
+            "id": "tq5",
+            "opts": [
+              "Daily communication",
+              "Plenty of alone time",
+              "Shared hobbies",
+              "Independent lifestyles",
+              "Frequent affection",
+              "Flexible schedules",
+              "Personal space",
+              "Deep emotional connection",
+              "Quiet coexistence",
+              "Adventurous experiences"
+            ],
+            "title": "How much togetherness and space do you need?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not perfect — just good. Day to day.",
+            "id": "tq6",
+            "opts": [
+              "Peaceful",
+              "Supportive",
+              "Adventurous",
+              "Stable",
+              "Emotionally deep",
+              "Playful",
+              "Growth-oriented",
+              "Relaxed",
+              "Honest",
+              "Inspiring"
+            ],
+            "title": "What does a good relationship feel like to you?",
+            "type": "chips"
+          },
+          {
+            "desc": "The non-negotiable parts of yourself.",
+            "id": "tq7",
+            "opts": [
+              "Peace",
+              "Freedom",
+              "Friendships",
+              "Personal philosophy",
+              "Career goals",
+              "Creativity",
+              "Alone time",
+              "Family connections",
+              "Hobbies",
+              "Independence"
+            ],
+            "title": "What are you not willing to give up, even for love?",
+            "type": "chips"
+          },
+          {
+            "desc": "Most people carry something in. What's yours?",
+            "id": "tq8",
+            "opts": [
+              "Abandonment",
+              "Losing freedom",
+              "Betrayal",
+              "Emotional pressure",
+              "Not being understood",
+              "Growing apart",
+              "Being controlled",
+              "Loneliness",
+              "Losing identity",
+              "Conflict"
+            ],
+            "title": "What fears do you bring into relationships?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not a holiday. Just a regular day that feels right.",
+            "id": "tq9",
+            "opts": [
+              "Cooking together",
+              "Quiet evenings",
+              "Traveling",
+              "Supporting each other's goals",
+              "Comfortable silence",
+              "Physical affection",
+              "Building a future together",
+              "Exploring together",
+              "Independent but connected",
+              "Sharing responsibilities"
+            ],
+            "title": "What does a normal, happy day together look like?",
+            "type": "chips"
+          },
+          {
+            "desc": "What actually happens when things get hard?",
+            "id": "tq10",
+            "opts": [
+              "Stay calm",
+              "Need space first",
+              "Become emotional",
+              "Avoid conflict",
+              "Want immediate discussion",
+              "Withdraw quietly",
+              "Try to solve logically",
+              "Need reassurance",
+              "Reflect before speaking",
+              "Fear hurting the other person"
+            ],
+            "title": "How do you tend to handle conflict?",
+            "type": "chips"
+          }
+        ],
+        "savedAt": 1778340994333
+      },
+      "1778404519290": {
+        "answersA": [
+          {
+            "chips": [
+              "Quality time",
+              "Shared adventure",
+              "Acts of care"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Loyalty",
+              "Emotional openness"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Criticism",
+              "Needing constant reassurance",
+              "Lack of communication"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Acts of service",
+              "Deep conversation"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Independent lifestyles",
+              "Frequent affection",
+              "Personal space"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Playful",
+              "Emotionally deep",
+              "Growth-oriented"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Personal philosophy",
+              "Creativity",
+              "Alone time",
+              "Family connections"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Growing apart",
+              "Not being understood",
+              "Emotional pressure",
+              "Betrayal",
+              "Loneliness"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Physical affection",
+              "Supporting each other's goals",
+              "Comfortable silence",
+              "Building a future together"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Fear hurting the other person",
+              "Withdraw quietly",
+              "Avoid conflict",
+              "Need reassurance"
+            ],
+            "custom": ""
+          }
+        ],
+        "answersB": [
+          {
+            "chips": [
+              "Quality time"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Calm communication",
+              "Emotional openness"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Needing constant reassurance",
+              "Controlling behavior",
+              "Emotional distance",
+              "Pressure to report everything",
+              "Feeling ignored"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Encouragement",
+              "Deep conversation"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Flexible schedules",
+              "Deep emotional connection",
+              "Personal space"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Stable",
+              "Emotionally deep",
+              "Supportive"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Family connections",
+              "Alone time",
+              "Personal philosophy"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Being controlled",
+              "Betrayal",
+              "Emotional pressure",
+              "Growing apart"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Exploring together",
+              "Comfortable silence",
+              "Physical affection"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Withdraw quietly",
+              "Become emotional",
+              "Avoid conflict"
+            ],
+            "custom": ""
+          }
+        ],
+        "gameName": "Reflection",
+        "id": "1778404519290",
+        "nameA": "Demen",
+        "nameB": "Kiwi",
+        "questions": [
+          {
+            "desc": "Think about actual moments. When do you genuinely feel it?",
+            "id": "tq1",
+            "opts": [
+              "Physical closeness",
+              "Quiet companionship",
+              "Deep conversation",
+              "Quality time",
+              "Shared adventure",
+              "Emotional reassurance",
+              "Acts of care",
+              "Being understood",
+              "Freedom and trust",
+              "Playfulness"
+            ],
+            "title": "When do you feel most loved?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not safe like nothing bad happens. Safe like you can be yourself.",
+            "id": "tq2",
+            "opts": [
+              "Honesty",
+              "Consistency",
+              "Freedom",
+              "Reassurance",
+              "Calm communication",
+              "Loyalty",
+              "Emotional openness",
+              "Patience",
+              "Stability",
+              "Acceptance"
+            ],
+            "title": "What makes you feel safe with someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "The small things that build up over time.",
+            "id": "tq3",
+            "opts": [
+              "Constant texting",
+              "Jealousy",
+              "Emotional distance",
+              "Criticism",
+              "Controlling behavior",
+              "Needing constant reassurance",
+              "Lack of communication",
+              "Feeling ignored",
+              "Pressure to report everything",
+              "Lack of trust"
+            ],
+            "title": "What quietly wears you down in a relationship?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not what you think you should — what just comes out of you.",
+            "id": "tq4",
+            "opts": [
+              "Loyalty",
+              "Calm presence",
+              "Practical support",
+              "Affection",
+              "Protection",
+              "Deep conversation",
+              "Freedom",
+              "Encouragement",
+              "Patience",
+              "Acts of service"
+            ],
+            "title": "What do you naturally give when you love someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "Everyone's different. Be honest.",
+            "id": "tq5",
+            "opts": [
+              "Daily communication",
+              "Plenty of alone time",
+              "Shared hobbies",
+              "Independent lifestyles",
+              "Frequent affection",
+              "Flexible schedules",
+              "Personal space",
+              "Deep emotional connection",
+              "Quiet coexistence",
+              "Adventurous experiences"
+            ],
+            "title": "How much togetherness and space do you need?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not perfect — just good. Day to day.",
+            "id": "tq6",
+            "opts": [
+              "Peaceful",
+              "Supportive",
+              "Adventurous",
+              "Stable",
+              "Emotionally deep",
+              "Playful",
+              "Growth-oriented",
+              "Relaxed",
+              "Honest",
+              "Inspiring"
+            ],
+            "title": "What does a good relationship feel like to you?",
+            "type": "chips"
+          },
+          {
+            "desc": "The non-negotiable parts of yourself.",
+            "id": "tq7",
+            "opts": [
+              "Peace",
+              "Freedom",
+              "Friendships",
+              "Personal philosophy",
+              "Career goals",
+              "Creativity",
+              "Alone time",
+              "Family connections",
+              "Hobbies",
+              "Independence"
+            ],
+            "title": "What are you not willing to give up, even for love?",
+            "type": "chips"
+          },
+          {
+            "desc": "Most people carry something in. What's yours?",
+            "id": "tq8",
+            "opts": [
+              "Abandonment",
+              "Losing freedom",
+              "Betrayal",
+              "Emotional pressure",
+              "Not being understood",
+              "Growing apart",
+              "Being controlled",
+              "Loneliness",
+              "Losing identity",
+              "Conflict"
+            ],
+            "title": "What fears do you bring into relationships?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not a holiday. Just a regular day that feels right.",
+            "id": "tq9",
+            "opts": [
+              "Cooking together",
+              "Quiet evenings",
+              "Traveling",
+              "Supporting each other's goals",
+              "Comfortable silence",
+              "Physical affection",
+              "Building a future together",
+              "Exploring together",
+              "Independent but connected",
+              "Sharing responsibilities"
+            ],
+            "title": "What does a normal, happy day together look like?",
+            "type": "chips"
+          },
+          {
+            "desc": "What actually happens when things get hard?",
+            "id": "tq10",
+            "opts": [
+              "Stay calm",
+              "Need space first",
+              "Become emotional",
+              "Avoid conflict",
+              "Want immediate discussion",
+              "Withdraw quietly",
+              "Try to solve logically",
+              "Need reassurance",
+              "Reflect before speaking",
+              "Fear hurting the other person"
+            ],
+            "title": "How do you tend to handle conflict?",
+            "type": "chips"
+          }
+        ],
+        "savedAt": 1778404519290
+      }
+    },
+    "WsVGzLU35OUZoMny0jhwobpyWKH3": {
+      "1778342451198": {
+        "answersA": [
+          {
+            "chips": [
+              "Physical closeness",
+              "Quiet companionship",
+              "Deep conversation",
+              "Quality time",
+              "Shared adventure",
+              "Freedom and trust",
+              "Playfulness"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Honesty",
+              "Freedom",
+              "Calm communication",
+              "Loyalty",
+              "Emotional openness"
+            ],
+            "custom": "Being trusted "
+          },
+          {
+            "chips": [
+              "Lack of trust",
+              "Pressure to report everything",
+              "Feeling ignored",
+              "Lack of communication",
+              "Needing constant reassurance",
+              "Jealousy",
+              "Controlling behavior",
+              "Emotional distance",
+              "Criticism"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Loyalty",
+              "Calm presence",
+              "Practical support",
+              "Affection",
+              "Protection",
+              "Deep conversation",
+              "Freedom",
+              "Encouragement",
+              "Patience",
+              "Acts of service"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Independent lifestyles",
+              "Frequent affection",
+              "Flexible schedules",
+              "Deep emotional connection",
+              "Quiet coexistence",
+              "Adventurous experiences"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Peaceful",
+              "Supportive",
+              "Adventurous",
+              "Emotionally deep",
+              "Playful",
+              "Growth-oriented",
+              "Honest",
+              "Inspiring"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Freedom",
+              "Friendships",
+              "Personal philosophy",
+              "Family connections",
+              "Independence"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Losing freedom",
+              "Emotional pressure",
+              "Being controlled",
+              "Losing identity"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Cooking together",
+              "Quiet evenings",
+              "Traveling",
+              "Supporting each other's goals",
+              "Comfortable silence",
+              "Physical affection",
+              "Building a future together",
+              "Exploring together",
+              "Independent but connected",
+              "Sharing responsibilities"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Stay calm",
+              "Fear hurting the other person",
+              "Reflect before speaking"
+            ],
+            "custom": "Calm communication "
+          }
+        ],
+        "answersB": [
+          {
+            "chips": [
+              "Physical closeness",
+              "Deep conversation",
+              "Quality time",
+              "Shared adventure",
+              "Emotional reassurance",
+              "Acts of care",
+              "Being understood",
+              "Playfulness"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Consistency",
+              "Reassurance",
+              "Calm communication",
+              "Loyalty",
+              "Patience",
+              "Stability",
+              "Emotional openness"
+            ],
+            "custom": "Transparency instead of honesty"
+          },
+          {
+            "chips": [
+              "Jealousy",
+              "Criticism",
+              "Emotional distance",
+              "Lack of communication",
+              "Feeling ignored",
+              "Lack of trust"
+            ],
+            "custom": "have other \"ngoài luồng\" relationships 🫤"
+          },
+          {
+            "chips": [
+              "Loyalty",
+              "Affection",
+              "Protection",
+              "Deep conversation",
+              "Encouragement",
+              "Patience"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Daily communication",
+              "Shared hobbies",
+              "Frequent affection",
+              "Deep emotional connection",
+              "Adventurous experiences"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Peaceful",
+              "Supportive",
+              "Stable",
+              "Emotionally deep",
+              "Playful",
+              "Growth-oriented",
+              "Inspiring",
+              "Relaxed"
+            ],
+            "custom": "Transparent instead of honest"
+          },
+          {
+            "chips": [
+              "Family connections",
+              "Personal philosophy"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Betrayal",
+              "Growing apart",
+              "Loneliness",
+              "Losing identity",
+              "Conflict",
+              "Not being understood",
+              "Abandonment",
+              "Emotional pressure"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Cooking together",
+              "Supporting each other's goals",
+              "Physical affection",
+              "Traveling",
+              "Building a future together",
+              "Exploring together",
+              "Sharing responsibilities"
+            ],
+            "custom": ""
+          },
+          {
+            "chips": [
+              "Want immediate discussion",
+              "Try to solve logically",
+              "Need reassurance",
+              "Fear hurting the other person",
+              "Become emotional"
+            ],
+            "custom": ""
+          }
+        ],
+        "gameName": "Untitled",
+        "id": "1778342451198",
+        "nameA": "Demen",
+        "nameB": "vanghoanghan",
+        "questions": [
+          {
+            "desc": "Think about actual moments. When do you genuinely feel it?",
+            "id": "tq1",
+            "opts": [
+              "Physical closeness",
+              "Quiet companionship",
+              "Deep conversation",
+              "Quality time",
+              "Shared adventure",
+              "Emotional reassurance",
+              "Acts of care",
+              "Being understood",
+              "Freedom and trust",
+              "Playfulness"
+            ],
+            "title": "When do you feel most loved?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not safe like nothing bad happens. Safe like you can be yourself.",
+            "id": "tq2",
+            "opts": [
+              "Honesty",
+              "Consistency",
+              "Freedom",
+              "Reassurance",
+              "Calm communication",
+              "Loyalty",
+              "Emotional openness",
+              "Patience",
+              "Stability",
+              "Acceptance"
+            ],
+            "title": "What makes you feel safe with someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "The small things that build up over time.",
+            "id": "tq3",
+            "opts": [
+              "Constant texting",
+              "Jealousy",
+              "Emotional distance",
+              "Criticism",
+              "Controlling behavior",
+              "Needing constant reassurance",
+              "Lack of communication",
+              "Feeling ignored",
+              "Pressure to report everything",
+              "Lack of trust"
+            ],
+            "title": "What quietly wears you down in a relationship?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not what you think you should — what just comes out of you.",
+            "id": "tq4",
+            "opts": [
+              "Loyalty",
+              "Calm presence",
+              "Practical support",
+              "Affection",
+              "Protection",
+              "Deep conversation",
+              "Freedom",
+              "Encouragement",
+              "Patience",
+              "Acts of service"
+            ],
+            "title": "What do you naturally give when you love someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "Everyone's different. Be honest.",
+            "id": "tq5",
+            "opts": [
+              "Daily communication",
+              "Plenty of alone time",
+              "Shared hobbies",
+              "Independent lifestyles",
+              "Frequent affection",
+              "Flexible schedules",
+              "Personal space",
+              "Deep emotional connection",
+              "Quiet coexistence",
+              "Adventurous experiences"
+            ],
+            "title": "How much togetherness and space do you need?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not perfect — just good. Day to day.",
+            "id": "tq6",
+            "opts": [
+              "Peaceful",
+              "Supportive",
+              "Adventurous",
+              "Stable",
+              "Emotionally deep",
+              "Playful",
+              "Growth-oriented",
+              "Relaxed",
+              "Honest",
+              "Inspiring"
+            ],
+            "title": "What does a good relationship feel like to you?",
+            "type": "chips"
+          },
+          {
+            "desc": "The non-negotiable parts of yourself.",
+            "id": "tq7",
+            "opts": [
+              "Peace",
+              "Freedom",
+              "Friendships",
+              "Personal philosophy",
+              "Career goals",
+              "Creativity",
+              "Alone time",
+              "Family connections",
+              "Hobbies",
+              "Independence"
+            ],
+            "title": "What are you not willing to give up, even for love?",
+            "type": "chips"
+          },
+          {
+            "desc": "Most people carry something in. What's yours?",
+            "id": "tq8",
+            "opts": [
+              "Abandonment",
+              "Losing freedom",
+              "Betrayal",
+              "Emotional pressure",
+              "Not being understood",
+              "Growing apart",
+              "Being controlled",
+              "Loneliness",
+              "Losing identity",
+              "Conflict"
+            ],
+            "title": "What fears do you bring into relationships?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not a holiday. Just a regular day that feels right.",
+            "id": "tq9",
+            "opts": [
+              "Cooking together",
+              "Quiet evenings",
+              "Traveling",
+              "Supporting each other's goals",
+              "Comfortable silence",
+              "Physical affection",
+              "Building a future together",
+              "Exploring together",
+              "Independent but connected",
+              "Sharing responsibilities"
+            ],
+            "title": "What does a normal, happy day together look like?",
+            "type": "chips"
+          },
+          {
+            "desc": "What actually happens when things get hard?",
+            "id": "tq10",
+            "opts": [
+              "Stay calm",
+              "Need space first",
+              "Become emotional",
+              "Avoid conflict",
+              "Want immediate discussion",
+              "Withdraw quietly",
+              "Try to solve logically",
+              "Need reassurance",
+              "Reflect before speaking",
+              "Fear hurting the other person"
+            ],
+            "title": "How do you tend to handle conflict?",
+            "type": "chips"
+          }
+        ],
+        "savedAt": 1778342451198
+      }
+    }
+  },
+  "rooms": {
+    "4E5NQA": {
+      "createdAt": 1778305773775,
+      "doneA": false,
+      "doneB": false,
+      "nameA": "Vien",
+      "nameB": ""
+    },
+    "ESE8P4": {
+      "answersA": [
+        {
+          "chips": [
+            "Physical closeness",
+            "Quiet companionship",
+            "Deep conversation",
+            "Quality time",
+            "Shared adventure",
+            "Freedom and trust",
+            "Playfulness"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Honesty",
+            "Freedom",
+            "Calm communication",
+            "Loyalty",
+            "Emotional openness"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Jealousy",
+            "Emotional distance",
+            "Criticism",
+            "Controlling behavior",
+            "Needing constant reassurance",
+            "Lack of communication",
+            "Feeling ignored",
+            "Pressure to report everything",
+            "Lack of trust"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Loyalty",
+            "Calm presence",
+            "Practical support",
+            "Protection",
+            "Deep conversation",
+            "Freedom",
+            "Encouragement",
+            "Patience"
+          ],
+          "custom": "Love actions"
+        },
+        {
+          "chips": [
+            "Daily communication",
+            "Independent lifestyles",
+            "Flexible schedules",
+            "Deep emotional connection",
+            "Quiet coexistence",
+            "Adventurous experiences"
+          ],
+          "custom": "Sometimes for alone time"
+        },
+        {
+          "chips": [
+            "Peaceful",
+            "Supportive",
+            "Adventurous",
+            "Emotionally deep",
+            "Playful",
+            "Growth-oriented",
+            "Inspiring",
+            "Honest"
+          ],
+          "custom": "Truly trust each other\nWilling to communicate to solve problems even though feeling uncomfortable "
+        },
+        {
+          "chips": [
+            "Freedom",
+            "Friendships",
+            "Personal philosophy",
+            "Family connections",
+            "Independence"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Losing freedom",
+            "Emotional pressure",
+            "Being controlled",
+            "Losing identity"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Cooking together",
+            "Quiet evenings",
+            "Traveling",
+            "Supporting each other's goals",
+            "Comfortable silence",
+            "Physical affection",
+            "Building a future together",
+            "Exploring together",
+            "Independent but connected",
+            "Sharing responsibilities"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Stay calm",
+            "Reflect before speaking",
+            "Fear hurting the other person",
+            "Avoid conflict"
+          ],
+          "custom": ""
+        }
+      ],
+      "answersB": [
+        {
+          "chips": [
+            "Physical closeness",
+            "Deep conversation",
+            "Quality time",
+            "Emotional reassurance",
+            "Acts of care",
+            "Being understood",
+            "Playfulness"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Emotional openness",
+            "Stability",
+            "Patience",
+            "Loyalty",
+            "Calm communication",
+            "Consistency",
+            "Reassurance"
+          ],
+          "custom": "Transparency instead of honesty"
+        },
+        {
+          "chips": [
+            "Jealousy",
+            "Criticism",
+            "Emotional distance",
+            "Lack of communication",
+            "Feeling ignored",
+            "Lack of trust"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Loyalty",
+            "Protection",
+            "Deep conversation",
+            "Encouragement",
+            "Patience",
+            "Affection"
+          ],
+          "custom": "Be present in angry mode"
+        },
+        {
+          "chips": [
+            "Daily communication",
+            "Shared hobbies",
+            "Frequent affection",
+            "Deep emotional connection",
+            "Quiet coexistence",
+            "Adventurous experiences"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Supportive",
+            "Stable",
+            "Emotionally deep",
+            "Growth-oriented",
+            "Inspiring",
+            "Playful",
+            "Relaxed",
+            "Peaceful"
+          ],
+          "custom": "Transparent instead of honest"
+        },
+        {
+          "chips": [
+            "Family connections",
+            "Hobbies",
+            "Personal philosophy"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Conflict",
+            "Loneliness",
+            "Emotional pressure",
+            "Abandonment",
+            "Not being understood",
+            "Growing apart",
+            "Losing identity",
+            "Betrayal"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Quiet evenings",
+            "Traveling",
+            "Supporting each other's goals",
+            "Physical affection",
+            "Building a future together",
+            "Exploring together",
+            "Sharing responsibilities",
+            "Cooking together"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Become emotional",
+            "Want immediate discussion",
+            "Try to solve logically",
+            "Need reassurance",
+            "Fear hurting the other person"
+          ],
+          "custom": ""
+        }
+      ],
+      "createdAt": 1778340077737,
+      "doneA": true,
+      "doneB": true,
+      "game": {
+        "createdAt": 1778316473215,
+        "description": "Ten thoughtful questions about love, space, and connection.",
+        "id": "45f117ae-c9e2-4f7d-99cc-c1f6a9f5a8bc",
+        "isTemplate": false,
+        "name": "Reflection",
+        "questions": [
+          {
+            "desc": "Think about actual moments. When do you genuinely feel it?",
+            "id": "tq1",
+            "opts": [
+              "Physical closeness",
+              "Quiet companionship",
+              "Deep conversation",
+              "Quality time",
+              "Shared adventure",
+              "Emotional reassurance",
+              "Acts of care",
+              "Being understood",
+              "Freedom and trust",
+              "Playfulness"
+            ],
+            "title": "When do you feel most loved?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not safe like nothing bad happens. Safe like you can be yourself.",
+            "id": "tq2",
+            "opts": [
+              "Honesty",
+              "Consistency",
+              "Freedom",
+              "Reassurance",
+              "Calm communication",
+              "Loyalty",
+              "Emotional openness",
+              "Patience",
+              "Stability",
+              "Acceptance"
+            ],
+            "title": "What makes you feel safe with someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "The small things that build up over time.",
+            "id": "tq3",
+            "opts": [
+              "Constant texting",
+              "Jealousy",
+              "Emotional distance",
+              "Criticism",
+              "Controlling behavior",
+              "Needing constant reassurance",
+              "Lack of communication",
+              "Feeling ignored",
+              "Pressure to report everything",
+              "Lack of trust"
+            ],
+            "title": "What quietly wears you down in a relationship?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not what you think you should — what just comes out of you.",
+            "id": "tq4",
+            "opts": [
+              "Loyalty",
+              "Calm presence",
+              "Practical support",
+              "Affection",
+              "Protection",
+              "Deep conversation",
+              "Freedom",
+              "Encouragement",
+              "Patience",
+              "Acts of service"
+            ],
+            "title": "What do you naturally give when you love someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "Everyone's different. Be honest.",
+            "id": "tq5",
+            "opts": [
+              "Daily communication",
+              "Plenty of alone time",
+              "Shared hobbies",
+              "Independent lifestyles",
+              "Frequent affection",
+              "Flexible schedules",
+              "Personal space",
+              "Deep emotional connection",
+              "Quiet coexistence",
+              "Adventurous experiences"
+            ],
+            "title": "How much togetherness and space do you need?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not perfect — just good. Day to day.",
+            "id": "tq6",
+            "opts": [
+              "Peaceful",
+              "Supportive",
+              "Adventurous",
+              "Stable",
+              "Emotionally deep",
+              "Playful",
+              "Growth-oriented",
+              "Relaxed",
+              "Honest",
+              "Inspiring"
+            ],
+            "title": "What does a good relationship feel like to you?",
+            "type": "chips"
+          },
+          {
+            "desc": "The non-negotiable parts of yourself.",
+            "id": "tq7",
+            "opts": [
+              "Peace",
+              "Freedom",
+              "Friendships",
+              "Personal philosophy",
+              "Career goals",
+              "Creativity",
+              "Alone time",
+              "Family connections",
+              "Hobbies",
+              "Independence"
+            ],
+            "title": "What are you not willing to give up, even for love?",
+            "type": "chips"
+          },
+          {
+            "desc": "Most people carry something in. What's yours?",
+            "id": "tq8",
+            "opts": [
+              "Abandonment",
+              "Losing freedom",
+              "Betrayal",
+              "Emotional pressure",
+              "Not being understood",
+              "Growing apart",
+              "Being controlled",
+              "Loneliness",
+              "Losing identity",
+              "Conflict"
+            ],
+            "title": "What fears do you bring into relationships?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not a holiday. Just a regular day that feels right.",
+            "id": "tq9",
+            "opts": [
+              "Cooking together",
+              "Quiet evenings",
+              "Traveling",
+              "Supporting each other's goals",
+              "Comfortable silence",
+              "Physical affection",
+              "Building a future together",
+              "Exploring together",
+              "Independent but connected",
+              "Sharing responsibilities"
+            ],
+            "title": "What does a normal, happy day together look like?",
+            "type": "chips"
+          },
+          {
+            "desc": "What actually happens when things get hard?",
+            "id": "tq10",
+            "opts": [
+              "Stay calm",
+              "Need space first",
+              "Become emotional",
+              "Avoid conflict",
+              "Want immediate discussion",
+              "Withdraw quietly",
+              "Try to solve logically",
+              "Need reassurance",
+              "Reflect before speaking",
+              "Fear hurting the other person"
+            ],
+            "title": "How do you tend to handle conflict?",
+            "type": "chips"
+          }
+        ]
+      },
+      "nameA": "Demen",
+      "nameB": "vanghoanghan"
+    },
+    "F9X4KM": {
+      "createdAt": 1778339759448,
+      "doneA": false,
+      "doneB": false,
+      "game": {
+        "createdAt": 1778316473215,
+        "description": "Ten thoughtful questions about love, space, and connection.",
+        "id": "45f117ae-c9e2-4f7d-99cc-c1f6a9f5a8bc",
+        "isTemplate": false,
+        "name": "Reflection",
+        "questions": [
+          {
+            "desc": "Think about actual moments. When do you genuinely feel it?",
+            "id": "tq1",
+            "opts": [
+              "Physical closeness",
+              "Quiet companionship",
+              "Deep conversation",
+              "Quality time",
+              "Shared adventure",
+              "Emotional reassurance",
+              "Acts of care",
+              "Being understood",
+              "Freedom and trust",
+              "Playfulness"
+            ],
+            "title": "When do you feel most loved?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not safe like nothing bad happens. Safe like you can be yourself.",
+            "id": "tq2",
+            "opts": [
+              "Honesty",
+              "Consistency",
+              "Freedom",
+              "Reassurance",
+              "Calm communication",
+              "Loyalty",
+              "Emotional openness",
+              "Patience",
+              "Stability",
+              "Acceptance"
+            ],
+            "title": "What makes you feel safe with someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "The small things that build up over time.",
+            "id": "tq3",
+            "opts": [
+              "Constant texting",
+              "Jealousy",
+              "Emotional distance",
+              "Criticism",
+              "Controlling behavior",
+              "Needing constant reassurance",
+              "Lack of communication",
+              "Feeling ignored",
+              "Pressure to report everything",
+              "Lack of trust"
+            ],
+            "title": "What quietly wears you down in a relationship?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not what you think you should — what just comes out of you.",
+            "id": "tq4",
+            "opts": [
+              "Loyalty",
+              "Calm presence",
+              "Practical support",
+              "Affection",
+              "Protection",
+              "Deep conversation",
+              "Freedom",
+              "Encouragement",
+              "Patience",
+              "Acts of service"
+            ],
+            "title": "What do you naturally give when you love someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "Everyone's different. Be honest.",
+            "id": "tq5",
+            "opts": [
+              "Daily communication",
+              "Plenty of alone time",
+              "Shared hobbies",
+              "Independent lifestyles",
+              "Frequent affection",
+              "Flexible schedules",
+              "Personal space",
+              "Deep emotional connection",
+              "Quiet coexistence",
+              "Adventurous experiences"
+            ],
+            "title": "How much togetherness and space do you need?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not perfect — just good. Day to day.",
+            "id": "tq6",
+            "opts": [
+              "Peaceful",
+              "Supportive",
+              "Adventurous",
+              "Stable",
+              "Emotionally deep",
+              "Playful",
+              "Growth-oriented",
+              "Relaxed",
+              "Honest",
+              "Inspiring"
+            ],
+            "title": "What does a good relationship feel like to you?",
+            "type": "chips"
+          },
+          {
+            "desc": "The non-negotiable parts of yourself.",
+            "id": "tq7",
+            "opts": [
+              "Peace",
+              "Freedom",
+              "Friendships",
+              "Personal philosophy",
+              "Career goals",
+              "Creativity",
+              "Alone time",
+              "Family connections",
+              "Hobbies",
+              "Independence"
+            ],
+            "title": "What are you not willing to give up, even for love?",
+            "type": "chips"
+          },
+          {
+            "desc": "Most people carry something in. What's yours?",
+            "id": "tq8",
+            "opts": [
+              "Abandonment",
+              "Losing freedom",
+              "Betrayal",
+              "Emotional pressure",
+              "Not being understood",
+              "Growing apart",
+              "Being controlled",
+              "Loneliness",
+              "Losing identity",
+              "Conflict"
+            ],
+            "title": "What fears do you bring into relationships?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not a holiday. Just a regular day that feels right.",
+            "id": "tq9",
+            "opts": [
+              "Cooking together",
+              "Quiet evenings",
+              "Traveling",
+              "Supporting each other's goals",
+              "Comfortable silence",
+              "Physical affection",
+              "Building a future together",
+              "Exploring together",
+              "Independent but connected",
+              "Sharing responsibilities"
+            ],
+            "title": "What does a normal, happy day together look like?",
+            "type": "chips"
+          },
+          {
+            "desc": "What actually happens when things get hard?",
+            "id": "tq10",
+            "opts": [
+              "Stay calm",
+              "Need space first",
+              "Become emotional",
+              "Avoid conflict",
+              "Want immediate discussion",
+              "Withdraw quietly",
+              "Try to solve logically",
+              "Need reassurance",
+              "Reflect before speaking",
+              "Fear hurting the other person"
+            ],
+            "title": "How do you tend to handle conflict?",
+            "type": "chips"
+          }
+        ]
+      },
+      "nameA": "Demen",
+      "nameB": "vanghoanghan"
+    },
+    "J3U95S": {
+      "answersA": [
+        {
+          "chips": [
+            "Quality time",
+            "Shared adventure",
+            "Acts of care"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Loyalty",
+            "Emotional openness"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Criticism",
+            "Needing constant reassurance",
+            "Lack of communication"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Acts of service",
+            "Deep conversation"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Independent lifestyles",
+            "Frequent affection",
+            "Personal space"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Playful",
+            "Emotionally deep",
+            "Growth-oriented"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Personal philosophy",
+            "Creativity",
+            "Alone time",
+            "Family connections"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Growing apart",
+            "Not being understood",
+            "Emotional pressure",
+            "Betrayal",
+            "Loneliness"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Physical affection",
+            "Supporting each other's goals",
+            "Comfortable silence",
+            "Building a future together"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Fear hurting the other person",
+            "Withdraw quietly",
+            "Avoid conflict",
+            "Need reassurance"
+          ],
+          "custom": ""
+        }
+      ],
+      "answersB": [
+        {
+          "chips": [
+            "Quality time"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Calm communication",
+            "Emotional openness"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Needing constant reassurance",
+            "Controlling behavior",
+            "Emotional distance",
+            "Pressure to report everything",
+            "Feeling ignored"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Encouragement",
+            "Deep conversation"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Flexible schedules",
+            "Deep emotional connection",
+            "Personal space"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Stable",
+            "Emotionally deep",
+            "Supportive"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Family connections",
+            "Alone time",
+            "Personal philosophy"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Being controlled",
+            "Betrayal",
+            "Emotional pressure",
+            "Growing apart"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Exploring together",
+            "Comfortable silence",
+            "Physical affection"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Withdraw quietly",
+            "Become emotional",
+            "Avoid conflict"
+          ],
+          "custom": ""
+        }
+      ],
+      "createdAt": 1778404354884,
+      "doneA": true,
+      "doneB": true,
+      "game": {
+        "createdAt": 1778316473215,
+        "description": "Ten thoughtful questions about love, space, and connection.",
+        "id": "45f117ae-c9e2-4f7d-99cc-c1f6a9f5a8bc",
+        "isTemplate": false,
+        "name": "Reflection",
+        "questions": [
+          {
+            "desc": "Think about actual moments. When do you genuinely feel it?",
+            "id": "tq1",
+            "opts": [
+              "Physical closeness",
+              "Quiet companionship",
+              "Deep conversation",
+              "Quality time",
+              "Shared adventure",
+              "Emotional reassurance",
+              "Acts of care",
+              "Being understood",
+              "Freedom and trust",
+              "Playfulness"
+            ],
+            "title": "When do you feel most loved?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not safe like nothing bad happens. Safe like you can be yourself.",
+            "id": "tq2",
+            "opts": [
+              "Honesty",
+              "Consistency",
+              "Freedom",
+              "Reassurance",
+              "Calm communication",
+              "Loyalty",
+              "Emotional openness",
+              "Patience",
+              "Stability",
+              "Acceptance"
+            ],
+            "title": "What makes you feel safe with someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "The small things that build up over time.",
+            "id": "tq3",
+            "opts": [
+              "Constant texting",
+              "Jealousy",
+              "Emotional distance",
+              "Criticism",
+              "Controlling behavior",
+              "Needing constant reassurance",
+              "Lack of communication",
+              "Feeling ignored",
+              "Pressure to report everything",
+              "Lack of trust"
+            ],
+            "title": "What quietly wears you down in a relationship?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not what you think you should — what just comes out of you.",
+            "id": "tq4",
+            "opts": [
+              "Loyalty",
+              "Calm presence",
+              "Practical support",
+              "Affection",
+              "Protection",
+              "Deep conversation",
+              "Freedom",
+              "Encouragement",
+              "Patience",
+              "Acts of service"
+            ],
+            "title": "What do you naturally give when you love someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "Everyone's different. Be honest.",
+            "id": "tq5",
+            "opts": [
+              "Daily communication",
+              "Plenty of alone time",
+              "Shared hobbies",
+              "Independent lifestyles",
+              "Frequent affection",
+              "Flexible schedules",
+              "Personal space",
+              "Deep emotional connection",
+              "Quiet coexistence",
+              "Adventurous experiences"
+            ],
+            "title": "How much togetherness and space do you need?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not perfect — just good. Day to day.",
+            "id": "tq6",
+            "opts": [
+              "Peaceful",
+              "Supportive",
+              "Adventurous",
+              "Stable",
+              "Emotionally deep",
+              "Playful",
+              "Growth-oriented",
+              "Relaxed",
+              "Honest",
+              "Inspiring"
+            ],
+            "title": "What does a good relationship feel like to you?",
+            "type": "chips"
+          },
+          {
+            "desc": "The non-negotiable parts of yourself.",
+            "id": "tq7",
+            "opts": [
+              "Peace",
+              "Freedom",
+              "Friendships",
+              "Personal philosophy",
+              "Career goals",
+              "Creativity",
+              "Alone time",
+              "Family connections",
+              "Hobbies",
+              "Independence"
+            ],
+            "title": "What are you not willing to give up, even for love?",
+            "type": "chips"
+          },
+          {
+            "desc": "Most people carry something in. What's yours?",
+            "id": "tq8",
+            "opts": [
+              "Abandonment",
+              "Losing freedom",
+              "Betrayal",
+              "Emotional pressure",
+              "Not being understood",
+              "Growing apart",
+              "Being controlled",
+              "Loneliness",
+              "Losing identity",
+              "Conflict"
+            ],
+            "title": "What fears do you bring into relationships?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not a holiday. Just a regular day that feels right.",
+            "id": "tq9",
+            "opts": [
+              "Cooking together",
+              "Quiet evenings",
+              "Traveling",
+              "Supporting each other's goals",
+              "Comfortable silence",
+              "Physical affection",
+              "Building a future together",
+              "Exploring together",
+              "Independent but connected",
+              "Sharing responsibilities"
+            ],
+            "title": "What does a normal, happy day together look like?",
+            "type": "chips"
+          },
+          {
+            "desc": "What actually happens when things get hard?",
+            "id": "tq10",
+            "opts": [
+              "Stay calm",
+              "Need space first",
+              "Become emotional",
+              "Avoid conflict",
+              "Want immediate discussion",
+              "Withdraw quietly",
+              "Try to solve logically",
+              "Need reassurance",
+              "Reflect before speaking",
+              "Fear hurting the other person"
+            ],
+            "title": "How do you tend to handle conflict?",
+            "type": "chips"
+          }
+        ]
+      },
+      "nameA": "Demen",
+      "nameB": "Kiwi"
+    },
+    "JULC6D": {
+      "createdAt": 1778312789359,
+      "doneA": false,
+      "doneB": false,
+      "game": {
+        "description": "Ten thoughtful questions about love, space, and connection.",
+        "id": "template",
+        "isTemplate": true,
+        "name": "Reflection",
+        "questions": [
+          {
+            "desc": "Think about actual moments. When do you genuinely feel it?",
+            "id": "tq1",
+            "opts": [
+              "Physical closeness",
+              "Quiet companionship",
+              "Deep conversation",
+              "Quality time",
+              "Shared adventure",
+              "Emotional reassurance",
+              "Acts of care",
+              "Being understood",
+              "Freedom and trust",
+              "Playfulness"
+            ],
+            "title": "When do you feel most loved?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not safe like nothing bad happens. Safe like you can be yourself.",
+            "id": "tq2",
+            "opts": [
+              "Honesty",
+              "Consistency",
+              "Freedom",
+              "Reassurance",
+              "Calm communication",
+              "Loyalty",
+              "Emotional openness",
+              "Patience",
+              "Stability",
+              "Acceptance"
+            ],
+            "title": "What makes you feel safe with someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "The small things that build up over time.",
+            "id": "tq3",
+            "opts": [
+              "Constant texting",
+              "Jealousy",
+              "Emotional distance",
+              "Criticism",
+              "Controlling behavior",
+              "Needing constant reassurance",
+              "Lack of communication",
+              "Feeling ignored",
+              "Pressure to report everything",
+              "Lack of trust"
+            ],
+            "title": "What quietly wears you down in a relationship?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not what you think you should — what just comes out of you.",
+            "id": "tq4",
+            "opts": [
+              "Loyalty",
+              "Calm presence",
+              "Practical support",
+              "Affection",
+              "Protection",
+              "Deep conversation",
+              "Freedom",
+              "Encouragement",
+              "Patience",
+              "Acts of service"
+            ],
+            "title": "What do you naturally give when you love someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "Everyone's different. Be honest.",
+            "id": "tq5",
+            "opts": [
+              "Daily communication",
+              "Plenty of alone time",
+              "Shared hobbies",
+              "Independent lifestyles",
+              "Frequent affection",
+              "Flexible schedules",
+              "Personal space",
+              "Deep emotional connection",
+              "Quiet coexistence",
+              "Adventurous experiences"
+            ],
+            "title": "How much togetherness and space do you need?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not perfect — just good. Day to day.",
+            "id": "tq6",
+            "opts": [
+              "Peaceful",
+              "Supportive",
+              "Adventurous",
+              "Stable",
+              "Emotionally deep",
+              "Playful",
+              "Growth-oriented",
+              "Relaxed",
+              "Honest",
+              "Inspiring"
+            ],
+            "title": "What does a good relationship feel like to you?",
+            "type": "chips"
+          },
+          {
+            "desc": "The non-negotiable parts of yourself.",
+            "id": "tq7",
+            "opts": [
+              "Peace",
+              "Freedom",
+              "Friendships",
+              "Personal philosophy",
+              "Career goals",
+              "Creativity",
+              "Alone time",
+              "Family connections",
+              "Hobbies",
+              "Independence"
+            ],
+            "title": "What are you not willing to give up, even for love?",
+            "type": "chips"
+          },
+          {
+            "desc": "Most people carry something in. What's yours?",
+            "id": "tq8",
+            "opts": [
+              "Abandonment",
+              "Losing freedom",
+              "Betrayal",
+              "Emotional pressure",
+              "Not being understood",
+              "Growing apart",
+              "Being controlled",
+              "Loneliness",
+              "Losing identity",
+              "Conflict"
+            ],
+            "title": "What fears do you bring into relationships?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not a holiday. Just a regular day that feels right.",
+            "id": "tq9",
+            "opts": [
+              "Cooking together",
+              "Quiet evenings",
+              "Traveling",
+              "Supporting each other's goals",
+              "Comfortable silence",
+              "Physical affection",
+              "Building a future together",
+              "Exploring together",
+              "Independent but connected",
+              "Sharing responsibilities"
+            ],
+            "title": "What does a normal, happy day together look like?",
+            "type": "chips"
+          },
+          {
+            "desc": "What actually happens when things get hard?",
+            "id": "tq10",
+            "opts": [
+              "Stay calm",
+              "Need space first",
+              "Become emotional",
+              "Avoid conflict",
+              "Want immediate discussion",
+              "Withdraw quietly",
+              "Try to solve logically",
+              "Need reassurance",
+              "Reflect before speaking",
+              "Fear hurting the other person"
+            ],
+            "title": "How do you tend to handle conflict?",
+            "type": "chips"
+          }
+        ]
+      },
+      "nameA": "Demen",
+      "nameB": "vanghoanghan"
+    },
+    "RTULY4": {
+      "createdAt": 1778307025117,
+      "doneA": false,
+      "doneB": false,
+      "game": {
+        "description": "Ten thoughtful questions about love, space, and connection.",
+        "id": "template",
+        "isTemplate": true,
+        "name": "Reflection",
+        "questions": [
+          {
+            "desc": "Think about actual moments. When do you genuinely feel it?",
+            "id": "tq1",
+            "opts": [
+              "Physical closeness",
+              "Quiet companionship",
+              "Deep conversation",
+              "Quality time",
+              "Shared adventure",
+              "Emotional reassurance",
+              "Acts of care",
+              "Being understood",
+              "Freedom and trust",
+              "Playfulness"
+            ],
+            "title": "When do you feel most loved?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not safe like nothing bad happens. Safe like you can be yourself.",
+            "id": "tq2",
+            "opts": [
+              "Honesty",
+              "Consistency",
+              "Freedom",
+              "Reassurance",
+              "Calm communication",
+              "Loyalty",
+              "Emotional openness",
+              "Patience",
+              "Stability",
+              "Acceptance"
+            ],
+            "title": "What makes you feel safe with someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "The small things that build up over time.",
+            "id": "tq3",
+            "opts": [
+              "Constant texting",
+              "Jealousy",
+              "Emotional distance",
+              "Criticism",
+              "Controlling behavior",
+              "Needing constant reassurance",
+              "Lack of communication",
+              "Feeling ignored",
+              "Pressure to report everything",
+              "Lack of trust"
+            ],
+            "title": "What quietly wears you down in a relationship?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not what you think you should — what just comes out of you.",
+            "id": "tq4",
+            "opts": [
+              "Loyalty",
+              "Calm presence",
+              "Practical support",
+              "Affection",
+              "Protection",
+              "Deep conversation",
+              "Freedom",
+              "Encouragement",
+              "Patience",
+              "Acts of service"
+            ],
+            "title": "What do you naturally give when you love someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "Everyone's different. Be honest.",
+            "id": "tq5",
+            "opts": [
+              "Daily communication",
+              "Plenty of alone time",
+              "Shared hobbies",
+              "Independent lifestyles",
+              "Frequent affection",
+              "Flexible schedules",
+              "Personal space",
+              "Deep emotional connection",
+              "Quiet coexistence",
+              "Adventurous experiences"
+            ],
+            "title": "How much togetherness and space do you need?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not perfect — just good. Day to day.",
+            "id": "tq6",
+            "opts": [
+              "Peaceful",
+              "Supportive",
+              "Adventurous",
+              "Stable",
+              "Emotionally deep",
+              "Playful",
+              "Growth-oriented",
+              "Relaxed",
+              "Honest",
+              "Inspiring"
+            ],
+            "title": "What does a good relationship feel like to you?",
+            "type": "chips"
+          },
+          {
+            "desc": "The non-negotiable parts of yourself.",
+            "id": "tq7",
+            "opts": [
+              "Peace",
+              "Freedom",
+              "Friendships",
+              "Personal philosophy",
+              "Career goals",
+              "Creativity",
+              "Alone time",
+              "Family connections",
+              "Hobbies",
+              "Independence"
+            ],
+            "title": "What are you not willing to give up, even for love?",
+            "type": "chips"
+          },
+          {
+            "desc": "Most people carry something in. What's yours?",
+            "id": "tq8",
+            "opts": [
+              "Abandonment",
+              "Losing freedom",
+              "Betrayal",
+              "Emotional pressure",
+              "Not being understood",
+              "Growing apart",
+              "Being controlled",
+              "Loneliness",
+              "Losing identity",
+              "Conflict"
+            ],
+            "title": "What fears do you bring into relationships?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not a holiday. Just a regular day that feels right.",
+            "id": "tq9",
+            "opts": [
+              "Cooking together",
+              "Quiet evenings",
+              "Traveling",
+              "Supporting each other's goals",
+              "Comfortable silence",
+              "Physical affection",
+              "Building a future together",
+              "Exploring together",
+              "Independent but connected",
+              "Sharing responsibilities"
+            ],
+            "title": "What does a normal, happy day together look like?",
+            "type": "chips"
+          },
+          {
+            "desc": "What actually happens when things get hard?",
+            "id": "tq10",
+            "opts": [
+              "Stay calm",
+              "Need space first",
+              "Become emotional",
+              "Avoid conflict",
+              "Want immediate discussion",
+              "Withdraw quietly",
+              "Try to solve logically",
+              "Need reassurance",
+              "Reflect before speaking",
+              "Fear hurting the other person"
+            ],
+            "title": "How do you tend to handle conflict?",
+            "type": "chips"
+          }
+        ]
+      },
+      "nameA": "Vien",
+      "nameB": ""
+    },
+    "YSFYU8": {
+      "answersA": [
+        {
+          "chips": [
+            "Physical closeness",
+            "Quiet companionship",
+            "Deep conversation",
+            "Quality time",
+            "Shared adventure",
+            "Freedom and trust",
+            "Playfulness"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Honesty",
+            "Freedom",
+            "Calm communication",
+            "Loyalty",
+            "Emotional openness"
+          ],
+          "custom": "Being trusted "
+        },
+        {
+          "chips": [
+            "Lack of trust",
+            "Pressure to report everything",
+            "Feeling ignored",
+            "Lack of communication",
+            "Needing constant reassurance",
+            "Jealousy",
+            "Controlling behavior",
+            "Emotional distance",
+            "Criticism"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Loyalty",
+            "Calm presence",
+            "Practical support",
+            "Affection",
+            "Protection",
+            "Deep conversation",
+            "Freedom",
+            "Encouragement",
+            "Patience",
+            "Acts of service"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Independent lifestyles",
+            "Frequent affection",
+            "Flexible schedules",
+            "Deep emotional connection",
+            "Quiet coexistence",
+            "Adventurous experiences"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Peaceful",
+            "Supportive",
+            "Adventurous",
+            "Emotionally deep",
+            "Playful",
+            "Growth-oriented",
+            "Honest",
+            "Inspiring"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Freedom",
+            "Friendships",
+            "Personal philosophy",
+            "Family connections",
+            "Independence"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Losing freedom",
+            "Emotional pressure",
+            "Being controlled",
+            "Losing identity"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Cooking together",
+            "Quiet evenings",
+            "Traveling",
+            "Supporting each other's goals",
+            "Comfortable silence",
+            "Physical affection",
+            "Building a future together",
+            "Exploring together",
+            "Independent but connected",
+            "Sharing responsibilities"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Stay calm",
+            "Fear hurting the other person",
+            "Reflect before speaking"
+          ],
+          "custom": "Calm communication "
+        }
+      ],
+      "answersB": [
+        {
+          "chips": [
+            "Physical closeness",
+            "Deep conversation",
+            "Quality time",
+            "Shared adventure",
+            "Emotional reassurance",
+            "Acts of care",
+            "Being understood",
+            "Playfulness"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Consistency",
+            "Reassurance",
+            "Calm communication",
+            "Loyalty",
+            "Patience",
+            "Stability",
+            "Emotional openness"
+          ],
+          "custom": "Transparency instead of honesty"
+        },
+        {
+          "chips": [
+            "Jealousy",
+            "Criticism",
+            "Emotional distance",
+            "Lack of communication",
+            "Feeling ignored",
+            "Lack of trust"
+          ],
+          "custom": "have other \"ngoài luồng\" relationships 🫤"
+        },
+        {
+          "chips": [
+            "Loyalty",
+            "Affection",
+            "Protection",
+            "Deep conversation",
+            "Encouragement",
+            "Patience"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Daily communication",
+            "Shared hobbies",
+            "Frequent affection",
+            "Deep emotional connection",
+            "Adventurous experiences"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Peaceful",
+            "Supportive",
+            "Stable",
+            "Emotionally deep",
+            "Playful",
+            "Growth-oriented",
+            "Inspiring",
+            "Relaxed"
+          ],
+          "custom": "Transparent instead of honest"
+        },
+        {
+          "chips": [
+            "Family connections",
+            "Personal philosophy"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Betrayal",
+            "Growing apart",
+            "Loneliness",
+            "Losing identity",
+            "Conflict",
+            "Not being understood",
+            "Abandonment",
+            "Emotional pressure"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Cooking together",
+            "Supporting each other's goals",
+            "Physical affection",
+            "Traveling",
+            "Building a future together",
+            "Exploring together",
+            "Sharing responsibilities"
+          ],
+          "custom": ""
+        },
+        {
+          "chips": [
+            "Want immediate discussion",
+            "Try to solve logically",
+            "Need reassurance",
+            "Fear hurting the other person",
+            "Become emotional"
+          ],
+          "custom": ""
+        }
+      ],
+      "createdAt": 1778341046808,
+      "doneA": true,
+      "doneB": true,
+      "game": {
+        "createdAt": 1778316473215,
+        "description": "Ten thoughtful questions about love, space, and connection.",
+        "id": "45f117ae-c9e2-4f7d-99cc-c1f6a9f5a8bc",
+        "isTemplate": false,
+        "name": "Reflection",
+        "questions": [
+          {
+            "desc": "Think about actual moments. When do you genuinely feel it?",
+            "id": "tq1",
+            "opts": [
+              "Physical closeness",
+              "Quiet companionship",
+              "Deep conversation",
+              "Quality time",
+              "Shared adventure",
+              "Emotional reassurance",
+              "Acts of care",
+              "Being understood",
+              "Freedom and trust",
+              "Playfulness"
+            ],
+            "title": "When do you feel most loved?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not safe like nothing bad happens. Safe like you can be yourself.",
+            "id": "tq2",
+            "opts": [
+              "Honesty",
+              "Consistency",
+              "Freedom",
+              "Reassurance",
+              "Calm communication",
+              "Loyalty",
+              "Emotional openness",
+              "Patience",
+              "Stability",
+              "Acceptance"
+            ],
+            "title": "What makes you feel safe with someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "The small things that build up over time.",
+            "id": "tq3",
+            "opts": [
+              "Constant texting",
+              "Jealousy",
+              "Emotional distance",
+              "Criticism",
+              "Controlling behavior",
+              "Needing constant reassurance",
+              "Lack of communication",
+              "Feeling ignored",
+              "Pressure to report everything",
+              "Lack of trust"
+            ],
+            "title": "What quietly wears you down in a relationship?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not what you think you should — what just comes out of you.",
+            "id": "tq4",
+            "opts": [
+              "Loyalty",
+              "Calm presence",
+              "Practical support",
+              "Affection",
+              "Protection",
+              "Deep conversation",
+              "Freedom",
+              "Encouragement",
+              "Patience",
+              "Acts of service"
+            ],
+            "title": "What do you naturally give when you love someone?",
+            "type": "chips"
+          },
+          {
+            "desc": "Everyone's different. Be honest.",
+            "id": "tq5",
+            "opts": [
+              "Daily communication",
+              "Plenty of alone time",
+              "Shared hobbies",
+              "Independent lifestyles",
+              "Frequent affection",
+              "Flexible schedules",
+              "Personal space",
+              "Deep emotional connection",
+              "Quiet coexistence",
+              "Adventurous experiences"
+            ],
+            "title": "How much togetherness and space do you need?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not perfect — just good. Day to day.",
+            "id": "tq6",
+            "opts": [
+              "Peaceful",
+              "Supportive",
+              "Adventurous",
+              "Stable",
+              "Emotionally deep",
+              "Playful",
+              "Growth-oriented",
+              "Relaxed",
+              "Honest",
+              "Inspiring"
+            ],
+            "title": "What does a good relationship feel like to you?",
+            "type": "chips"
+          },
+          {
+            "desc": "The non-negotiable parts of yourself.",
+            "id": "tq7",
+            "opts": [
+              "Peace",
+              "Freedom",
+              "Friendships",
+              "Personal philosophy",
+              "Career goals",
+              "Creativity",
+              "Alone time",
+              "Family connections",
+              "Hobbies",
+              "Independence"
+            ],
+            "title": "What are you not willing to give up, even for love?",
+            "type": "chips"
+          },
+          {
+            "desc": "Most people carry something in. What's yours?",
+            "id": "tq8",
+            "opts": [
+              "Abandonment",
+              "Losing freedom",
+              "Betrayal",
+              "Emotional pressure",
+              "Not being understood",
+              "Growing apart",
+              "Being controlled",
+              "Loneliness",
+              "Losing identity",
+              "Conflict"
+            ],
+            "title": "What fears do you bring into relationships?",
+            "type": "chips"
+          },
+          {
+            "desc": "Not a holiday. Just a regular day that feels right.",
+            "id": "tq9",
+            "opts": [
+              "Cooking together",
+              "Quiet evenings",
+              "Traveling",
+              "Supporting each other's goals",
+              "Comfortable silence",
+              "Physical affection",
+              "Building a future together",
+              "Exploring together",
+              "Independent but connected",
+              "Sharing responsibilities"
+            ],
+            "title": "What does a normal, happy day together look like?",
+            "type": "chips"
+          },
+          {
+            "desc": "What actually happens when things get hard?",
+            "id": "tq10",
+            "opts": [
+              "Stay calm",
+              "Need space first",
+              "Become emotional",
+              "Avoid conflict",
+              "Want immediate discussion",
+              "Withdraw quietly",
+              "Try to solve logically",
+              "Need reassurance",
+              "Reflect before speaking",
+              "Fear hurting the other person"
+            ],
+            "title": "How do you tend to handle conflict?",
+            "type": "chips"
+          }
+        ]
+      },
+      "nameA": "Demen",
+      "nameB": "vanghoanghan"
+    }
+  }
+}

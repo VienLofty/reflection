@@ -23,8 +23,22 @@ function esc(str) {
   return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
-// ─── Default Template Game ────────────────────────────────────────────────────
+// ─── Templates ──────────────────────────────────────────────────────────────
 
+let TEMPLATES = [];
+
+async function loadTemplates() {
+  if (TEMPLATES.length) return TEMPLATES;
+  try {
+    const r = await fetch("assets/templates.json");
+    TEMPLATES = await r.json();
+  } catch (e) {
+    TEMPLATES = [];
+  }
+  return TEMPLATES;
+}
+
+// kept for backward-compat with old data paths
 const TEMPLATE_GAME = {
   id: "template",
   name: "Reflection",
