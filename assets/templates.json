@@ -1,0 +1,377 @@
+[
+  {
+    "id": "template-reflection",
+    "name": "Reflection",
+    "description": "Ten thoughtful questions about love, space, and connection.",
+    "isTemplate": true,
+    "questions": [
+      {
+        "id": "tq1",
+        "title": "When do you feel most loved?",
+        "desc": "Think about actual moments. When do you genuinely feel it?",
+        "type": "chips",
+        "opts": [
+          "Physical closeness",
+          "Quiet companionship",
+          "Deep conversation",
+          "Quality time",
+          "Shared adventure",
+          "Emotional reassurance",
+          "Acts of care",
+          "Being understood",
+          "Freedom and trust",
+          "Playfulness"
+        ]
+      },
+      {
+        "id": "tq2",
+        "title": "What makes you feel safe with someone?",
+        "desc": "Not safe like nothing bad happens. Safe like you can be yourself.",
+        "type": "chips",
+        "opts": [
+          "Honesty",
+          "Consistency",
+          "Freedom",
+          "Reassurance",
+          "Calm communication",
+          "Loyalty",
+          "Emotional openness",
+          "Patience",
+          "Stability",
+          "Acceptance"
+        ]
+      },
+      {
+        "id": "tq3",
+        "title": "What quietly wears you down in a relationship?",
+        "desc": "The small things that build up over time.",
+        "type": "chips",
+        "opts": [
+          "Constant texting",
+          "Jealousy",
+          "Emotional distance",
+          "Criticism",
+          "Controlling behavior",
+          "Needing constant reassurance",
+          "Lack of communication",
+          "Feeling ignored",
+          "Pressure to report everything",
+          "Lack of trust"
+        ]
+      },
+      {
+        "id": "tq4",
+        "title": "What do you naturally give when you love someone?",
+        "desc": "Not what you think you should — what just comes out of you.",
+        "type": "chips",
+        "opts": [
+          "Loyalty",
+          "Calm presence",
+          "Practical support",
+          "Affection",
+          "Protection",
+          "Deep conversation",
+          "Freedom",
+          "Encouragement",
+          "Patience",
+          "Acts of service"
+        ]
+      },
+      {
+        "id": "tq5",
+        "title": "How much togetherness and space do you need?",
+        "desc": "Everyone's different. Be honest.",
+        "type": "chips",
+        "opts": [
+          "Daily communication",
+          "Plenty of alone time",
+          "Shared hobbies",
+          "Independent lifestyles",
+          "Frequent affection",
+          "Flexible schedules",
+          "Personal space",
+          "Deep emotional connection",
+          "Quiet coexistence",
+          "Adventurous experiences"
+        ]
+      },
+      {
+        "id": "tq6",
+        "title": "What does a good relationship feel like to you?",
+        "desc": "Not perfect — just good. Day to day.",
+        "type": "chips",
+        "opts": [
+          "Peaceful",
+          "Supportive",
+          "Adventurous",
+          "Stable",
+          "Emotionally deep",
+          "Playful",
+          "Growth-oriented",
+          "Relaxed",
+          "Honest",
+          "Inspiring"
+        ]
+      },
+      {
+        "id": "tq7",
+        "title": "What are you not willing to give up, even for love?",
+        "desc": "The non-negotiable parts of yourself.",
+        "type": "chips",
+        "opts": [
+          "Peace",
+          "Freedom",
+          "Friendships",
+          "Personal philosophy",
+          "Career goals",
+          "Creativity",
+          "Alone time",
+          "Family connections",
+          "Hobbies",
+          "Independence"
+        ]
+      },
+      {
+        "id": "tq8",
+        "title": "What fears do you bring into relationships?",
+        "desc": "Most people carry something in. What's yours?",
+        "type": "chips",
+        "opts": [
+          "Abandonment",
+          "Losing freedom",
+          "Betrayal",
+          "Emotional pressure",
+          "Not being understood",
+          "Growing apart",
+          "Being controlled",
+          "Loneliness",
+          "Losing identity",
+          "Conflict"
+        ]
+      },
+      {
+        "id": "tq9",
+        "title": "What does a normal, happy day together look like?",
+        "desc": "Not a holiday. Just a regular day that feels right.",
+        "type": "chips",
+        "opts": [
+          "Cooking together",
+          "Quiet evenings",
+          "Traveling",
+          "Supporting each other's goals",
+          "Comfortable silence",
+          "Physical affection",
+          "Building a future together",
+          "Exploring together",
+          "Independent but connected",
+          "Sharing responsibilities"
+        ]
+      },
+      {
+        "id": "tq10",
+        "title": "How do you tend to handle conflict?",
+        "desc": "What actually happens when things get hard?",
+        "type": "chips",
+        "opts": [
+          "Stay calm",
+          "Need space first",
+          "Become emotional",
+          "Avoid conflict",
+          "Want immediate discussion",
+          "Withdraw quietly",
+          "Try to solve logically",
+          "Need reassurance",
+          "Reflect before speaking",
+          "Fear hurting the other person"
+        ]
+      }
+    ]
+},
+  {
+    "id": "relationship-clarity-v2",
+    "name": "Relationship Clarity",
+    "description": "Previous takeaway: strong emotional connection and shared life vision, but conflict around reassurance vs freedom, transparency vs emotional breathing room, and unresolved discomfort around the ex relationship.",
+    "isTemplate": true,
+    "questions": [
+      {
+        "id": "q1",
+        "title": "What does freedom in a relationship mean to you?",
+        "desc": "Not avoiding commitment — what helps you feel emotionally free and natural?",
+        "type": "chips",
+        "opts": [
+          "Not needing to report everything",
+          "Having personal hobbies",
+          "Time alone without guilt",
+          "Keeping friendships",
+          "Freedom to think differently",
+          "Flexible communication",
+          "Being trusted naturally",
+          "Space to focus on life goals",
+          "Emotional independence",
+          "Freedom to travel or explore"
+        ]
+      },
+      {
+        "id": "q2",
+        "title": "What makes you feel truly chosen by someone?",
+        "desc": "What actions or attitudes make you feel emotionally secure and prioritized?",
+        "type": "chips",
+        "opts": [
+          "Consistent communication",
+          "Transparency",
+          "Physical affection",
+          "Quality time",
+          "Loyalty",
+          "Being emotionally present",
+          "Introducing me into their life",
+          "Prioritizing me in difficult moments",
+          "Commitment to the future",
+          "Protecting the relationship"
+        ]
+      },
+      {
+        "id": "q3",
+        "title": "What role should ex-partners have after a relationship ends?",
+        "desc": "There is no right answer. Be honest about your comfort level.",
+        "type": "chips",
+        "opts": [
+          "No contact at all",
+          "Friendly but distant",
+          "Occasional check-ins",
+          "Remain friends",
+          "Depends on the history",
+          "Okay socially but not emotionally close",
+          "Transparency is important",
+          "I feel uncomfortable with ex contact",
+          "I believe mature friendship is possible",
+          "I need strong boundaries"
+        ]
+      },
+      {
+        "id": "q4",
+        "title": "What kind of transparency do you need?",
+        "desc": "How much sharing helps you feel safe without becoming controlling?",
+        "type": "chips",
+        "opts": [
+          "Share important events naturally",
+          "Tell me when something affects us",
+          "Open phone/social media",
+          "No hiding or omitting",
+          "No need to report everything",
+          "Honesty is enough",
+          "Transparency builds trust",
+          "Privacy should still exist",
+          "Mentioning interactions with exes",
+          "Frequent updates help me feel secure"
+        ]
+      },
+      {
+        "id": "q5",
+        "title": "What makes you emotionally exhausted in relationships?",
+        "desc": "The patterns that slowly drain your energy.",
+        "type": "chips",
+        "opts": [
+          "Constant conflict",
+          "Jealousy",
+          "Feeling controlled",
+          "Emotional distance",
+          "Unclear communication",
+          "Neediness",
+          "Avoidance",
+          "Feeling untrusted",
+          "Pressure to change",
+          "Emotional unpredictability"
+        ]
+      },
+      {
+        "id": "q6",
+        "title": "What does healthy reassurance look like to you?",
+        "desc": "What feels caring instead of controlling?",
+        "type": "chips",
+        "opts": [
+          "Simple check-ins",
+          "Good morning/night texts",
+          "Quality time together",
+          "Verbal affirmation",
+          "Physical affection",
+          "Being emotionally available",
+          "Consistency",
+          "Explaining changes in behavior",
+          "Respecting space",
+          "Trust without constant proof"
+        ]
+      },
+      {
+        "id": "q7",
+        "title": "When conflict happens, what do you need most?",
+        "desc": "What helps you return to connection safely?",
+        "type": "chips",
+        "opts": [
+          "Immediate discussion",
+          "Time alone first",
+          "Gentle tone",
+          "Logical discussion",
+          "Emotional reassurance",
+          "Physical comfort",
+          "Honest transparency",
+          "Patience",
+          "Space to calm down",
+          "Clear resolution"
+        ]
+      },
+      {
+        "id": "q8",
+        "title": "What are you afraid might happen in this relationship?",
+        "desc": "Sometimes hidden fears shape our behavior.",
+        "type": "chips",
+        "opts": [
+          "Losing freedom",
+          "Being abandoned",
+          "Being misunderstood",
+          "Being emotionally trapped",
+          "Getting hurt again",
+          "Growing apart",
+          "Not being enough",
+          "Losing myself",
+          "Wasting time",
+          "Hurting the other person"
+        ]
+      },
+      {
+        "id": "q9",
+        "title": "What kind of love feels most natural to you?",
+        "desc": "Not idealized — what actually fits your personality?",
+        "type": "chips",
+        "opts": [
+          "Calm and peaceful",
+          "Passionate and intense",
+          "Playful and light",
+          "Deep and emotional",
+          "Independent but connected",
+          "Protective and loyal",
+          "Growth-oriented",
+          "Adventurous",
+          "Stable and predictable",
+          "Quiet companionship"
+        ]
+      },
+      {
+        "id": "q10",
+        "title": "What would make this relationship worth fighting for?",
+        "desc": "What makes difficulties feel meaningful instead of exhausting?",
+        "type": "chips",
+        "opts": [
+          "Shared life vision",
+          "Deep emotional connection",
+          "Mutual trust",
+          "Shared values",
+          "Feeling peaceful together",
+          "Growing together",
+          "Strong attraction",
+          "Feeling understood",
+          "Building a future together",
+          "Supporting each other's goals"
+        ]
+      }
+    ]
+  }
