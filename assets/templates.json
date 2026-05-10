@@ -186,7 +186,7 @@
         ]
       }
     ]
-},
+  },
   {
     "id": "relationship-clarity-v2",
     "name": "Relationship Clarity",
@@ -375,3 +375,4 @@
       }
     ]
   }
+]
